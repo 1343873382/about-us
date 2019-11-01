@@ -3,12 +3,12 @@ variables:
   REPO_NAME: about-us
 
 stages:
-  - install
+  - setup
   - build
   - deploy
 
-install_dependencies:
-  stage: install
+prepare:
+  stage: setup
   cache: 
     key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
     paths:
