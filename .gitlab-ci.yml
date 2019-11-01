@@ -9,6 +9,8 @@ stages:
 
 prepare:
   stage: setup
+  tags:
+    - redrock-fe
   cache: 
     key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
     paths:
@@ -21,6 +23,8 @@ prepare:
 
 build:
   stage: build
+  tags:
+    - redrock-fe
   cache: 
     key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
     paths:
