@@ -1,0 +1,38 @@
+image: redrock-fe
+variables:
+  REPO_NAME: about-us
+
+install_dependencies:
+  stage: install_dependencies
+  cache: 
+    key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    paths:
+      - node_modules/
+  script:
+    - npm ci
+  only:
+    changes:
+      - package-lock.json
+
+build:
+  stage: build
+  cache: 
+    key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    paths:
+      - node_modules/
+    policy: pull
+  script:
+    - npm run build
+  artifacts:
+    expire_in: 10 min
+    paths:
+      - build
+
+deploy_dev:
+  stage: deploy
+  tags:
+    - redrock-fe
+  script:
+    - tar -C build -cf $REPO_NAME.tar .
+    - curl -F data=@$REPO_NAME.tar -X POST http://202.202.43.234/rrapi/deploy/node/$REPO_NAME
+
