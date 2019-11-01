@@ -42,6 +42,6 @@ deploy_dev:
   tags:
     - redrock-fe
   script:
-    - tar -C build -cf $REPO_NAME.tar .
-    - curl -F data=@$REPO_NAME.tar -X POST http://202.202.43.234/rrapi/deploy/node/$REPO_NAME
+    - tar -C build -cf dist.tar .
+    - curl -F data=@dist.tar -X POST http://202.202.43.234/rrapi/deploy/node/$REPO_NAME
 
