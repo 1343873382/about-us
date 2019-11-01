@@ -33,7 +33,7 @@ build:
   script:
     - npm run build
   artifacts:
-    expire_in: 10 min
+    expire_in: 3 days
     paths:
       - build
 
