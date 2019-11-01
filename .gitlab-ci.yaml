@@ -2,6 +2,11 @@ image: redrock-fe
 variables:
   REPO_NAME: about-us
 
+statge:
+  - install_dependencies
+  - build
+  - deploy
+
 install_dependencies:
   stage: install_dependencies
   cache: 
