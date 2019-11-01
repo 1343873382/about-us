@@ -2,7 +2,7 @@ image: redrock-fe
 variables:
   REPO_NAME: about-us
 
-stage:
+stages:
   - install_dependencies
   - build
   - deploy
