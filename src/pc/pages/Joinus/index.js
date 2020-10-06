@@ -5,7 +5,7 @@ import './index.scss'
 
 export const Joinus = props => {
   const { joinus } = useContext(Context)
-  const { p1, p2, p3, button, tip } = joinus
+  const { p1, p2, p3, button } = joinus
 
   return (
     <div className={`joinus page ${props.className}`}>
