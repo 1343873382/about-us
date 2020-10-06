@@ -3,18 +3,18 @@ import {
   Index,
   Aboutus,
   Department,
-  Destination,
-  Product,
+  Destination, Product,
   Joinus
 } from "./pages"
-import { Header, Sidebar } from "./components"
+
+
+import { Sidebar } from "./components"
 import "./scss/normalize.scss"
 import "./scss/global.scss"
 
 export const App = () => {
   const [currentIndex, setCurrentIndex] = useState(1)
   const [isScrolling, setIsScrolling] = useState(false)
-  const [headerActive, setHeaderActive] = useState(false)
 
   useEffect(() => {
     window.onmousewheel = e => {
@@ -31,11 +31,6 @@ export const App = () => {
   })
 
   useEffect(() => {
-    if (currentIndex === 1 || currentIndex === 4) {
-      setHeaderActive(false)
-    } else {
-      setHeaderActive(true)
-    }
     return () => {
       setIsScrolling(true)
       setTimeout(() => {
@@ -52,7 +47,7 @@ export const App = () => {
 
   return (
     <>
-      <Header active={headerActive} />
+      {/* <Header active={headerActive} /> */}
       <Sidebar
         index={currentIndex}
         isScrolling={isScrolling}

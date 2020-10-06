@@ -1,14 +1,109 @@
 footer {
   width: 100%;
-  height: 46px;
-  position: fixed;
+  height: 250px;
+  position: absolute;
   bottom: 0;
   font-size: 14px;
-  color: #322d98;
+  background: #FBFBFB;
+  //color: #322d98;
+  .other-inner-footer{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .red_rock_logo{
+        min-width: 306px;
+        min-height: 46px;
+        margin-left: 180px;
+        background-image: url("../../../assets/logo/redrock_logo.png");
+        background-size: cover;
+        transform: scale(0.7);
+      }
+
+      .footer-title-about-us{
+        height: 150px;
+        margin-left: 80px;
+        p{
+          width: 70px;
+          font-size: 10px;
+          margin-bottom: 20px;
+        }
+        li{
+          cursor: pointer;
+          width: 60px;
+          color: #666666;
+          font-size: 8px;
+          line-height: 26px;
+          list-style: none;
+        }
+      }
+      .footer-title-product{
+        height: 150px;
+        margin-left: 50px;
+        p{
+          width: 70px;
+          font-size: 10px;
+          margin-bottom: 20px;
+        }
+        li{
+          cursor: pointer;
+          width: 60px;
+          color: #666666;
+          font-size: 8px;
+          line-height: 26px;
+          list-style: none;
+        }
+      }
+      .QrCode1{
+        margin-left: 150px;
+        min-width: 100px;
+        min-height: 100px;
+        background-image: url("../../../assets/footer/bacteria.png");
+        background-size: cover;
+        &::before{
+          position: relative;
+          content: "红岩网校";
+          left: 25px;
+          top: 100px;
+        }
+      }
+      .QrCode2{
+        margin-left: 30px;
+        min-width: 100px;
+        min-height: 100px;
+        background-image: url("../../../assets/footer/cyxbs.png");
+        background-size: cover;
+        &::before{
+          position: relative;
+          content: "重邮小帮手";
+          left: 15px;
+          top: 100px;
+        }
+      }
+    }  
+    
+
 
   .inner-footer {
     width: 1000px;
     height: 100%;
     margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4px;
+    line-height: 14px;
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+    p:nth-child(1){
+      margin-left: 70px;
+    }
+    p:nth-child(2){
+      
+    }
+    p:nth-child(3){
+      
+    }
   }
 }

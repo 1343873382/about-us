@@ -15,7 +15,7 @@ export const Joinus = () => {
       <div className="container">
         <div className="girl"></div>
         <div className="p1">{p1}</div>
-        <div className="p2" dangerouslySetInnerHTML={{__html: p2}}></div>
+        <div className="p2" dangerouslySetInnerHTML={{ __html: p2 }}></div>
         <a href={button.website}><button>{button.text}</button></a>
       </div>
     </div>

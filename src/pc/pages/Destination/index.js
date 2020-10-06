@@ -5,7 +5,7 @@ import { Context } from '../../Context'
 import './index.scss'
 
 export const Destination = props => {
-  const { title, destination } = useContext(Context)
+  const { destination } = useContext(Context)
   const settings = {
     dots: true,
     infinite: true,
@@ -16,11 +16,10 @@ export const Destination = props => {
     prevArrow: <PrevArrow />
   }
   const destinations = parseDestination(destination)
-  
+
   return (
     <div className={`destination page ${props.className}`}>
       <div className="container">
-        <p className="title">{title.destination}</p>
         <div className="carousel">
           <Slider {...settings}>
             {

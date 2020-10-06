@@ -1,3 +1,11 @@
+@font-face{
+  font-family: 'Microsoft YaHei';
+  src : url('../../assets/font/Impact字体.ttf');
+}
+*{
+  font-family: 'Microsoft YaHei';
+}
+
 .title {
   font-size: 5vw;
   color: #2f4ba6;
@@ -67,16 +75,19 @@
   }
 
   .slick-dots li button {
-    background: url('../../assets/dot.png');
-    background-size: 100% 100%;
+    //background: url('../../assets/dot.png');
+    //background-size: 100% 100%;
+    background-color:#FFA8A8;
     height: 10px;
     width: 10px;
+    border-radius: 50%;
     transition: all .3s ease;
   }
 
   .slick-dots li.slick-active button {
-    background: url('../../assets/dot-active.png');
-    background-size: 100% 100%;
+    //background: url('../../assets/dot-active.png');
+    //background-size: 100% 100%;
+    background-color: #FF4848;
     height: 10px;
     width: 20px;
   }

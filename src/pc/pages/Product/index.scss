@@ -5,13 +5,19 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-    top: 140px;
+    top: 70px;
 
     .intro {
-      color: #7f7f7f;
+      width: 1000px;
+      color: #666666;
       text-align: center;
       font-size: 14px;
       line-height: 24px;
+    }
+
+    .introduce{
+      width: 300px;
+      height: 200px;
     }
 
     .carousel {

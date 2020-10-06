@@ -1,7 +1,7 @@
 export const destinationData = {
   destination: [
     {
-      year: "2000级",
+      year: "2000",
       members: [
         {
           name: "胡振勇",
@@ -14,7 +14,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2004级",
+      year: "2004",
       members: [
         {
           name: "王善峰",
@@ -35,7 +35,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2005级",
+      year: "2005",
       members: [
         {
           name: "徐延之",
@@ -60,7 +60,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2006级",
+      year: "2006",
       members: [
         {
           name: "张洋",
@@ -81,7 +81,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2007级",
+      year: "2007",
       members: [
         {
           name: "奉银梅",
@@ -102,7 +102,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2008级",
+      year: "2008",
       members: [
         {
           name: "孟之杰",
@@ -115,7 +115,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2009级",
+      year: "2009",
       members: [
         {
           name: "马旭",
@@ -136,7 +136,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2010级",
+      year: "2010",
       members: [
         {
           name: "单鹏",
@@ -157,7 +157,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2011级",
+      year: "2011",
       members: [
         {
           name: "任晓康",
@@ -186,7 +186,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2012级",
+      year: "2012",
       members: [
         {
           name: "钟郭福",
@@ -231,7 +231,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2013级",
+      year: "2013",
       members: [
         {
           name: "杨程",
@@ -304,7 +304,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2014级",
+      year: "2014",
       members: [
         {
           name: "刘文栖",
@@ -389,7 +389,7 @@ export const destinationData = {
       ]
     },
     {
-      year: "2015级",
+      year: "2015",
       members: [
         {
           name: "刘力塽",
@@ -475,6 +475,98 @@ export const destinationData = {
           name: "李立平",
           location: "北京字节跳动科技有限公司"
         }
+      ],
+    },
+    {
+      year: "2016",
+      members: [
+        {
+          "name": "卢帅",
+          "location": "腾讯科技（深圳）有限公司"
+        },
+        {
+          "name": "匡俊嘉",
+          "location": "腾讯科技（深圳）有限公司"
+        },
+        {
+          "name": "颜子沛",
+          "location": "悉尼大学"
+        },
+        {
+          "name": "彭时夏", "location": "滴滴"
+        },
+        {
+          "name": "朱展萱",
+          "location": "腾讯科技（深圳）有限公司"
+        },
+        {
+          "name": "梁霄",
+          "location": "腾讯科技（深圳）有限公司"
+        },
+        {
+          "name": "李吉",
+          "location": "北京字跳网络技术有限公司"
+        },
+        {
+          "name": "王弘毅",
+          "location": " 华南理工大学"
+        },
+        {
+          "name": "李效乾",
+          "location": "腾讯科技（北京）有限公司"
+        },
+        {
+          "name": "杨宇哲",
+          "location": "网易游戏（互娱）"
+        },
+        {
+          "name": "孔明",
+          "location": "中国电信浙江长途电信传输局宁波分局"
+        },
+        {
+          "name": "伊俊墨",
+          "location": "腾讯科技（深圳）有限公司"
+        },
+        {
+          "name": "宋洪栅",
+          "location": "百度在线网络技术（北京）有限公司"
+        },
+        {
+          "name": "姜子来",
+          "location": "北京字跳网络技术有限公司"
+        },
+        {
+          "name": "文一鹏",
+          "location": "北京字跳网络技术有限公司"
+        },
+        {
+          "name": "肖晟鹏",
+          "location": "神州数码武汉云基地"
+        },
+        {
+          "name": "孙琬淇",
+          "location": "腾讯科技（深圳）有限公司"
+        },
+        {
+          "name": "张德明",
+          "location": "广州腾讯科技有限公司"
+        },
+        {
+          "name": "严以宁",
+          "location": "北京邮电大学"
+        },
+        {
+          "name": "田秋怡",
+          "location": "滴滴出行科技发展有限公司"
+        },
+        {
+          "name": "方丽涵",
+          "location": "腾讯科技（深圳）有限公司"
+        },
+        {
+          "name": "杨瑞鑫",
+          "location": "深圳虾皮信息科技有限公司"
+        },
       ]
     }
   ].reverse()

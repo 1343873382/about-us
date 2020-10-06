@@ -18,7 +18,7 @@ export const Destination = () => {
 
   return (
     <div className="destination">
-      <div className="title" style={{justifyContent: 'space-between'}}>
+      <div className="title" style={{ justifyContent: 'space-between' }}>
         <div className="flex-center">
           <div className="line" />
           {title.destination}
@@ -38,7 +38,6 @@ export const Destination = () => {
                   if (type === "year") {
                     return (
                       <div className="row year" key={j}>
-                        <div className="circle" />
                         {data}
                       </div>
                     )

@@ -14,11 +14,12 @@ export const Index = props => {
     className: 'max',
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 6000,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    arrows: true,
+    autoplaySpeed: 3000,
+    //nextArrow: <NextArrow />,
+    //prevArrow: <PrevArrow />
   }
-  
+
   return (
     <div className={`index page ${props.className}`}>
       <Slider {...settings}>
@@ -36,22 +37,22 @@ export const Index = props => {
   )
 }
 
-const PrevArrow = props => {
-  const { onClick } = props
-  return (
-    <div
-      className="prev button"
-      onClick={onClick}
-    />
-  )
-}
+// const PrevArrow = props => {
+//   const { onClick } = props
+//   return (
+//     <div
+//       className="prev button"
+//       onClick={onClick}
+//     />
+//   )
+// }
 
-const NextArrow = props => {
-  const { onClick } = props
-  return (
-    <div
-      className="next button"
-      onClick={onClick}
-    />
-  )
-}
+// const NextArrow = props => {
+//   const { onClick } = props
+//   return (
+//     <div
+//       className="next button"
+//       onClick={onClick}
+//     />
+//   )
+// }

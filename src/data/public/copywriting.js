@@ -1,7 +1,7 @@
 /*
  * @Author: lin
  * @Date: 2019-07-10 17:01:13
- * @LastEditTime: 2019-11-17 20:34:29
+ * @LastEditTime: 2020-10-06 20:21:43
  * @FilePath: \about-us\src\data\public\copywriting.js
  */
 export const copywritingData = {
@@ -12,55 +12,57 @@ export const copywritingData = {
   },
   aboutus: {
     icon: [
-      require('../../assets/aboutus/1.png'),
-      require('../../assets/aboutus/2.png'),
-      require('../../assets/aboutus/3.png'),
-      require('../../assets/aboutus/4.png'),
-      require('../../assets/aboutus/5.png'),
-      require('../../assets/aboutus/6.png')
+      { img: require('../../assets/aboutus/1.png'), number: '2000', info: '成立时间' },
+      { img: require('../../assets/aboutus/2.png'), number: '18+', info: '获奖数量' },
+      { img: require('../../assets/aboutus/3.png'), number: '53884', info: '掌上重邮累计用户' },
+      { img: require('../../assets/aboutus/4.png'), number: '65523+', info: '重邮小帮手用户量' },
+      { img: require('../../assets/aboutus/5.png'), number: '697584+', info: '新媒体阅读量' },
+      { img: require('../../assets/aboutus/6.png'), number: '18+', info: '旗下产品数量' }
     ],
-    copywriting: `重庆邮电大学红岩网校工作站是学校唯一一个从事互联网产品开发运营的校级学生组织。该团队自创立以来，始终坚持以技术见长，充分结合同学们的话语体系和视觉风格建设网络平台，繁荣网络文化。红岩网校工作站在校团委的指导下，由学生自我管理，多年来走出了一大批优秀的IT互联网人才，深受电信运营商、腾讯、阿里巴巴和百度等知名互联网企业的青睐。团队先后获评“全国五四红旗团支部”、“团中央新媒体专业工作室”、“重庆市IT杰出青年群体”等系列荣誉。红岩网校工作站属于校级学生组织，其中包括五个部门：产品策划及运营部，视觉设计部，Web研发部，移动开发部和运维安全部。工作中，各个部门相互协作、共同进步，开发上线了重邮小帮手微信公众号，掌上重邮、BTdown铺等一系列优秀的校园网络产品，深受广大师生的好评。红岩网校工作站被大家誉为“重邮互联网大咖的摇篮”。`
+    copywriting: `红岩网校工作站是学校唯一一个从事互联网产品开发运营的校级学生组织，在校团委的指导下， 由学生自我管理，多年来走出了一大批优秀的IT互联网人才，深受腾讯、阿里巴巴、字节跳动、华为等知名互联网企业的青睐。 团队先后获评“全国五四红旗团支部”、“团中央新媒体专业工作室”、“重庆市 IT 杰出青年群体”等系列荣誉。开发上线了“重邮小帮手”微信公众号，“重邮帮”微信小程序、“掌上重邮”APP等一系列优秀的校园网络产品，深受广大师生好评。`
   },
   carousel: [
     require('../../assets/banner/1.png'),
-    require('../../assets/banner/2.png')
+    require('../../assets/banner/2.png'),
+    require('../../assets/banner/3.png'),
+    require('../../assets/banner/4.png')
   ],
   department: {
     copywriting: '红岩网校工作站工作模式与当前互联网产品开发模式相同。五个部门各司其职，共同协力打造服务于学生的各类产品。',
     masters: [
       {
         job: '站长',
-        name: '牛奥林',
+        name: '郑煜',
         intro: '',
         avatar: require('../../assets/avatar/nal.jpg')
       },
       {
         job: '副站长',
-        name: '李军环',
+        name: '刘宇锋',
         intro: '分管产品策划及运营部',
         avatar: require('../../assets/avatar/ljh.jpg')
       },
       {
         job: '副站长',
-        name: '贺雨晴',
+        name: '吴嫣冉',
         intro: '分管视觉设计部',
         avatar: require('../../assets/avatar/hyq.jpg')
       },
       {
         job: '副站长',
-        name: '胡仓',
+        name: '刘静',
         intro: '分管Web研发部',
         avatar: require('../../assets/avatar/hc.jpg')
       },
       {
         job: '副站长',
-        name: '刘彦茹',
+        name: '陈阳',
         intro: '分管移动开发部',
         avatar: require('../../assets/avatar/lyr.jpg')
       },
       {
         job: '副站长',
-        name: '沈仕元',
+        name: '张开宇',
         intro: '分管运维安全部',
         avatar: require('../../assets/avatar/ssy.jpg')
       }
@@ -73,27 +75,27 @@ export const copywritingData = {
       },
       {
         name: '产品策划及运营部',
-        introduction: '挖掘用户需求，拥有独特严谨的产品思维，提出产品优化方案。利用新媒体平台，对活动和产品形成强有力的助推。活跃在各个部门之间，是促进各部门沟通的桥梁。',
+        introduction: '结合数据分析挖掘用户需求，带给用户更好的体验。利用新媒体平台，创作优秀文案，助推活动及产品。活跃于各个部门之间，是促进各部门沟通的桥梁。',
         photo: require('../../assets/department/pm.jpg')
       },
       {
         name: '视觉设计部',
-        introduction: '设计产品图形用户界面，跟踪产品视觉及体验效果。对网站进行整体创意和美术设计，移动端和PC端用户的界面设计；网页宣传海报设计；网站产品的动画及动效设计。',
+        introduction: '将产品原型视觉转化，跟踪产品视觉及体验效果。设计移动端、PC端产品用户界面，进行整体美化及美术设计，创作吸睛宣传海报，设计网站产品动画及动效。',
         photo: require('../../assets/department/design.jpg')
       },
       {
         name: 'Web研发部',
-        introduction: '主要工作为将视觉页面还原为代码、设计数据库、添加逻辑完成交互。职责包括开发重邮小帮手微信号、手机端/PC 端网站开发、助力掌上重邮APP，提供强大的后台驱动等。',
+        introduction: '主要分为前端和后端两个方向，前端将视觉页面还原为代码，带给用户极致体验；后端开发构造清晰数据模型，提供稳定中心服务和强大的后台驱动。',
         photo: require('../../assets/department/web.jpg')
       },
       {
         name: '移动开发部',
-        introduction: '主要负责移动客户端产品的开发，以 Kotlin、Java、Objective-C、 Swift为主要开发语言，涵盖 Android、iOS两个平台，进行网校产品开发。',
+        introduction: '负责移动端产品的开发，涵盖 Android、 iOS 两个平台。助力“掌上重邮”、“约跑”等产品将视觉的设计图通过代码转化为用户友好的产品，满足不同场景下的用户需求，创造出令人惊艳的作品。',
         photo: require('../../assets/department/mobile.jpg')
       },
       {
         name: '运维安全部',
-        introduction: '主要负责维护网校的服务器稳定和安全，同时也负责新项目的部署、环境安全配置和性能优化。还负责了重邮开源镜像站、Proxmox 虚拟化平台、Gitlab 服务等。',
+        introduction: '维护网校服务器的稳定与安全，从系统架构到基础设施搭建，从项目部署到业务性能优化。基于Linux，追求先进技术栈和极致性能。',
         photo: require('../../assets/department/sre.jpg')
       }
     ]

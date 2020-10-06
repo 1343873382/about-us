@@ -8,13 +8,16 @@
     margin-top: 5vw;
     border-radius: 2vw;
     padding: .4vw 0;
-    box-shadow: 0px 0px 6px 1px rgba(26, 26, 26, 0.1);
+    //box-shadow: 0px 0px 6px 1px rgba(26, 26, 26, 0.1);
 
     .master {
-      width: 90%;
+      width: 95%;
       height: 30vw;
       margin: 0 auto;
-      border-bottom: solid #e0e0e0 .3vw;
+      //border-bottom: solid #e0e0e0 .3vw;
+      box-shadow: 0px 4px 10px rgba(35, 1, 1, 0.06);
+      border-radius: 8px;
+      margin-bottom: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -28,7 +31,7 @@
         height: 20vw;
         border-radius: 1vw;
         overflow: hidden;
-
+        margin-left: 10px;
         img {
           height: 100%;
         }
@@ -39,13 +42,13 @@
         height: 20vw;
         display: flex;
         flex-flow: column;
-        justify-content: center;
+        //justify-content: center;
 
         .master-info {
           display: flex;
           font-size: 4.5vw;
           color: #666;
-
+          margin-top:5px;
           .name {
             min-width: 16vw;
           }
@@ -67,7 +70,7 @@
   .department-card {
     width: 100%;
     min-height: 68vw;
-    box-shadow: 0px 0px 6px 1px rgba(26, 26, 26, 0.1);
+    box-shadow: 0px 4px 10px rgba(35, 1, 1, 0.06);
     border-radius: 2vw;
     margin-top: 5vw;
     padding-bottom: 3vw;

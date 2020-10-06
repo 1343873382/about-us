@@ -4,7 +4,7 @@ import "./index.scss"
 
 export const Department = () => {
   const { title, department } = useContext(Context)
-  const { copywriting, departments, masters } = department
+  const { departments, masters } = department
   departments.splice(0, 1)
 
   return (
@@ -13,7 +13,6 @@ export const Department = () => {
         <div className="line" />
         {title.department}
       </div>
-      <div className="copywriting">{copywriting}</div>
       <div className="se-title" style={{ marginTop: "5vw" }}>
         站长团
       </div>
@@ -37,7 +36,8 @@ export const Department = () => {
           )
         })}
       </div>
-      <div className="se-title" style={{ marginTop: "8vw" }}>
+      <div className="title" style={{ marginTop: "8vw" }}>
+        <div className="line" />
         部门介绍
       </div>
       {departments.map((department, i) => {

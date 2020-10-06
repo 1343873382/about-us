@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2019-07-10 17:01:13
- * @LastEditTime: 2019-11-17 20:35:28
- * @LastEditors: Do not edit
+ * @LastEditTime: 2020-10-06 00:54:52
+ * @LastEditors: 代码是写出来给人看的，附带能在机器上运行
  * @Description: In User Settings Edit
  * @FilePath: \about-us\src\pc\pages\Department\index.js
  */
@@ -12,23 +12,26 @@ import Slider from "react-slick";
 import "./index.scss";
 
 export const Department = props => {
-  const { title, department } = useContext(Context);
+  const { department } = useContext(Context);
   const { departments } = department;
   const settings = {
+    className: "center",
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    arrows: false,
-    vertical: true,
-    verticalSwiping: true,
-    dotsClass: "vertical-dots",
+    arrows: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    //vertical: true,
+    //verticalSwiping: true,
+    //dotsClass: "vertical-dots",
     speed: 1000
   };
 
   return (
     <div className={`department page ${props.className}`}>
-      <div className="title">{title.department}</div>
+      {/* <div className="title">{title.department}</div> */}
       <div className="carousel">
         <Slider {...settings}>
           {departments.map((e, i) => (
@@ -51,11 +54,31 @@ export const Department = props => {
           ))}
         </Slider>
       </div>
-      <div className="lines line1"></div>
+      {/* <div className="lines line1"></div>
       <div className="lines line2"></div>
       <div className="lines line3"></div>
       <div className="lines line4"></div>
-      <div className="lines line5"></div>
+      <div className="lines line5"></div> */}
     </div>
   );
 };
+
+const PrevArrow = props => {
+  const { onClick } = props
+  return (
+    <span
+      className="prev2 button"
+      onClick={onClick}
+    />
+  )
+}
+
+const NextArrow = props => {
+  const { onClick } = props
+  return (
+    <span
+      className="next2 button"
+      onClick={onClick}
+    />
+  )
+}

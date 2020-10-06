@@ -13,4 +13,4 @@ export const Footer = () => {
       <p className="email">{email}</p>
     </footer>
   )
-}
+} 

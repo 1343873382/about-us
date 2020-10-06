@@ -5,13 +5,18 @@ import './index.scss'
 export const Sidebar = props => {
   const { index, isScrolling, setCurrentIndex } = props
   const { title } = useContext(Context)
-  const setClass = i => `text-box flex-center ${index === i && 'text-box-active'}`
-
+  const setClass = i => `text-box  ${index === i && 'text-box-active'}`
+  const show_to_top = () => `home ${index >= 4 ? 'show' : 'hide'}`
   return (
-    <div className={`sidebar flex-center ${isScrolling && 'fade-sidebar'}`}>
-      <div className="inner-sidebar flex-between">
+    <div className={`sidebar  ${isScrolling && 'fade-sidebar'}`}>
+      <div className="inner-sidebar ">
         <div
-          className={`index ${index === 1 && 'index-active'}`}
+          className={show_to_top()}
+          onClick={() => setCurrentIndex(1)}
+        >
+        </div>
+        <div
+          className="red_rock_logo"
           onClick={() => setCurrentIndex(1)}
         >
         </div>
@@ -28,14 +33,14 @@ export const Sidebar = props => {
           <div className="link">{title.product}</div>
         </div>
         <div
-         className={setClass(4)}
-         onClick={() => setCurrentIndex(4)} 
+          className={setClass(4)}
+          onClick={() => setCurrentIndex(4)}
         >
           <div className="link">{title.department}</div>
         </div>
         <div
-         className={setClass(5)}
-         onClick={() => setCurrentIndex(5)}
+          className={setClass(5)}
+          onClick={() => setCurrentIndex(5)}
         >
           <div className="link">{title.destination}</div>
         </div>

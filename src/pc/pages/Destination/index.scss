@@ -4,7 +4,7 @@
   .carousel {
     width: 1000px;
     position: relative;
-    top: 160px;
+    top: 120px;
     cursor: pointer;
 
     div {
@@ -26,15 +26,19 @@
 
       .year {
         color: #f27f7f;
-        font-size: 15px;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
       }
 
       .line {
-        width: 3px;
-        height: 12px;
-        background: #fb4d4d;
-        border-radius: 6px;
-        margin-right: 12px;
+        position: relative;
+        transform: translateX(-10px);
+        height: 40px;
+        width: 40px;
+        background-color: #fafafa;
+        background-image: url("../../../assets/Destination/Destination_icon.png");
+        background-size: cover;
       }
 
       .member {
@@ -69,15 +73,31 @@
     background-size: 100% 100%;
   }
   .slick-dots {
-    position: relative;
-    top: 30px;
+    position: absolute;
+    top:107%;
+  }
+  .slick-dots li{
+    width: 25px;
+    
   }
   .slick-dots li.slick-active button:before {
-    color: #9766d0;
     opacity: 1;
+    background-color: #f94141;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    content:"";
+    width: 30px;
+    height: 4px; 
+    transition: all .4s;
   }
   .slick-dots li button::before {
-    color: #cacaca;
+    background-color: #FFA8A8;
+    border-radius: 15px;
     opacity: 1;
+    transform: translateX(-50%);
+    content:"";
+    width: 20px;
+    height: 4px;
+    transition: all .4s;
   }
 }

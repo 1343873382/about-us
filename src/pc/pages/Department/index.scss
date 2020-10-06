@@ -149,6 +149,7 @@
     background: url('../../../assets/button/6-active.png');
     background-size: 100% 100%;
   }
+  
 }
 
 .lines {
@@ -183,4 +184,33 @@
 .line5 {
   top: 50%;
   transform: translateY(182px);
+}
+.button {
+  width: 22px;
+  height: 36px;
+  position: absolute;
+  z-index: 999;
+  top: 190px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.prev2 {
+  height: 71px;
+  width: 50px;
+  top: 50%;
+  left: 3%;
+  background: url('../../../assets/left.png');
+  background-size: cover;
+}
+.next2 {
+  height: 71px;
+  width: 50px;
+  top: 50%;
+  left: 93%;
+  background: url('../../../assets/right.png');
+  background-size: cover;
 }
