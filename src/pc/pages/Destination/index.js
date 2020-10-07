@@ -29,6 +29,7 @@ export const Destination = props => {
                     {
                       column.map((row, j) => {
                         const { type, data } = row
+
                         if (type === 'year') {
                           return (
                             <div className="row year" key={j}>
@@ -38,6 +39,7 @@ export const Destination = props => {
                           )
                         } else {
                           return (
+
                             <div className="row member" key={j}>
                               <div className="name">{data.name}</div>
                               <div className="place">{data.location}</div>

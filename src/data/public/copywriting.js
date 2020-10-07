@@ -1,7 +1,7 @@
 /*
  * @Author: lin
  * @Date: 2019-07-10 17:01:13
- * @LastEditTime: 2020-10-06 20:21:43
+ * @LastEditTime: 2020-10-07 17:27:55
  * @FilePath: \about-us\src\data\public\copywriting.js
  */
 export const copywritingData = {
@@ -15,11 +15,11 @@ export const copywritingData = {
       { img: require('../../assets/aboutus/1.png'), number: '2000', info: '成立时间' },
       { img: require('../../assets/aboutus/2.png'), number: '18+', info: '获奖数量' },
       { img: require('../../assets/aboutus/3.png'), number: '53884', info: '掌上重邮累计用户' },
-      { img: require('../../assets/aboutus/4.png'), number: '65523+', info: '重邮小帮手用户量' },
+      { img: require('../../assets/aboutus/4.png'), number: '65523+', info: '新媒体关注量' },
       { img: require('../../assets/aboutus/5.png'), number: '697584+', info: '新媒体阅读量' },
-      { img: require('../../assets/aboutus/6.png'), number: '18+', info: '旗下产品数量' }
+      { img: require('../../assets/aboutus/6.png'), number: '28+', info: '旗下产品数量' }
     ],
-    copywriting: `红岩网校工作站是学校唯一一个从事互联网产品开发运营的校级学生组织，在校团委的指导下， 由学生自我管理，多年来走出了一大批优秀的IT互联网人才，深受腾讯、阿里巴巴、字节跳动、华为等知名互联网企业的青睐。 团队先后获评“全国五四红旗团支部”、“团中央新媒体专业工作室”、“重庆市 IT 杰出青年群体”等系列荣誉。开发上线了“重邮小帮手”微信公众号，“重邮帮”微信小程序、“掌上重邮”APP等一系列优秀的校园网络产品，深受广大师生好评。`
+    copywriting: `红岩网校工作站是学校唯一一个从事互联网产品开发运营的校级学生组织，在校团委的指导下，由学生自我管理，多年来走出了一大批优秀的IT互联网人才，深受腾讯、阿里巴巴、字节跳动、华为等知名互联网企业的青睐。 团队先后获评“全国五四红旗团支部”、“团中央新媒体专业工作室”、“重庆市IT杰出青年群体”等系列荣誉。开发上线了“重邮小帮手”微信公众号，“重邮帮”微信小程序、“掌上重邮”APP等一系列优秀的校园网络产品，深受广大师生好评。`
   },
   carousel: [
     require('../../assets/banner/1.png'),
@@ -70,7 +70,7 @@ export const copywritingData = {
     departments: [
       {
         name: '站长团',
-        introduction: '',
+        introduction: '红岩网校工作站站长团，站长管理各个部门，五个副站长分别管理产品策划及运营部、视觉设计部、web研发部、移动开发部、运维安全部，共同管理网校日常。站长团成员均具有较强的学习能力、管理能力，并有一定的技术特长。红岩网校工作站在站长团的带领下稳定发展。',
         photo: require('../../assets/department/leader.jpg')
       },
       {

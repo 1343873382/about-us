@@ -9,10 +9,15 @@ export const parseDestination = destination => {
       data: year
     })
     members.forEach(member => {
-      arr.push({
-        type: "member",
-        data: member
-      })
+      if (member.name === ' ') {
+
+      } else {
+        arr.push({
+          type: "member",
+          data: member
+        })
+      }
+
     })
   })
   //列数
