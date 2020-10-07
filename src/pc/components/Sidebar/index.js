@@ -6,7 +6,16 @@ export const Sidebar = props => {
   const { index, isScrolling, setCurrentIndex } = props
   const { title } = useContext(Context)
   const setClass = i => `text-box  ${index === i && 'text-box-active'}`
-  const show_to_top = () => `home ${index >= 4 ? 'show' : 'hide'}`
+  const show_to_top = () => {
+    if (index < 4) {
+      return `home hide`
+    }
+    else if (index >= 4 && index < 6) {
+      return `home show`
+    } else if (index === 6) {
+      return `home bottom`
+    }
+  }
   return (
     <div className={`sidebar  ${isScrolling && 'fade-sidebar'}`}>
       <div className="inner-sidebar ">
