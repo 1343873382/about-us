@@ -29,9 +29,10 @@ footer {
         
       }
       .title_flex_box{
+        width: 14vw;
         display: flex;
         flex-direction: row;
-        
+        justify-content: space-between;
       }
 
       .footer-title-about-us{

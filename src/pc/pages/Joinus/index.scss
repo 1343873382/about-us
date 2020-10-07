@@ -63,7 +63,36 @@
       outline: none;
       &:hover {
         background: #e93636;
+        transition: .7s all;
+        &::before{
+        position: absolute;
+        line-height: 40px;
+        content: "啊欧，现在还不能报名哦~";
+        font-size: 4px;
+        width: 150px;
+        height: 40px;
+        opacity: 1;
+        background: #FFF0F1;
+        color: #FF9494;
+        transition: .7s all;
+        transform: translateX(-25px) translateY(50px);
       }
+      }
+      &::before{
+        position: absolute;
+        line-height: 40px;
+        font-size: 4px;
+        border-radius: 4px;
+        content: "啊欧，现在还不能报名哦~";
+        width: 150px;
+        height: 40px;
+        opacity: 0;
+        background: #FFF0F1;
+        color: #FF9494;
+        transition: .7s all;
+        transform: translateX(-25px) translateY(0px) scale(0);
+      }
+      
     }
 
     .tip{
