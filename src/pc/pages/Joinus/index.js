@@ -8,7 +8,6 @@ export const Joinus = props => {
   const { p1, p2, p3, button } = joinus
   return (
     <div className={`joinus page ${props.className}`}>
-      {/* <div className="container2"> */}
       <div className="inner-container flex-between">
         <div className="copywriting">
           <div className="p1">{p1}</div>
@@ -18,7 +17,6 @@ export const Joinus = props => {
         </div>
         <div className="girl"></div>
       </div>
-      {/* </div> */}
       <Footer />
     </div>
   )
