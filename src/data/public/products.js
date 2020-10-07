@@ -15,18 +15,17 @@ export const products = {
       background: 'rgb(97, 171, 255)'
     },
     {
-      title: '网址大全',
-      subtitle: '校内导航',
-      intro: '重邮校内各大讯息网址站点汇聚于此，一站式网络大全连通重邮全网，为广大重邮师生提供便捷服务。',
-      picture: require('../../assets/product/3.png'),
-      background: '#5785fb'
-    },
-    {
       title: '掌上重邮',
       subtitle: '移动应用',
       intro: '应用于重邮校内的APP，为重邮学子带来了更具校园特色的互联网服务，提供包括课表查询、志愿时长、电费查询、空教室等特色功能。让广大邮子享受到线上快捷便利的校园生活。',
       picture: require('../../assets/product/4.png'),
       background: '#1296db'
+    }, {
+      title: '网址大全',
+      subtitle: '校内导航',
+      intro: '重邮校内各大讯息网址站点汇聚于此，一站式网络大全连通重邮全网，为广大重邮师生提供便捷服务。',
+      picture: require('../../assets/product/3.png'),
+      background: '#5785fb'
     },
     {
       title: '弹幕系统',

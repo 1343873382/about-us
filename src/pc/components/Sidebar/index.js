@@ -16,8 +16,9 @@ export const Sidebar = props => {
       return `home bottom`
     }
   }
+  const not_top = () => `sidebar ${isScrolling && 'fade-sidebar'} ${index >= 2 ? "box_shadow" : ""}`;
   return (
-    <div className={`sidebar  ${isScrolling && 'fade-sidebar'}`}>
+    <div className={not_top()}>
       <div className="inner-sidebar ">
         <div
           className={show_to_top()}
