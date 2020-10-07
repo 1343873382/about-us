@@ -16,7 +16,7 @@ export const Product = () => {
 
   return (
     <div className="product">
-      <div className="title" style={{justifyContent: 'space-between'}}>
+      <div className="title" style={{ justifyContent: 'space-between' }}>
         <div className="flex-center">
           <div className="line" />
           {title.product}

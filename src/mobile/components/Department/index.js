@@ -1,4 +1,5 @@
 import React, { useContext } from "react"
+import Slider from "react-slick"
 import { Context } from "../../Context"
 import "./index.scss"
 
@@ -6,7 +7,14 @@ export const Department = () => {
   const { title, department } = useContext(Context)
   const { departments, masters } = department
   departments.splice(0, 1)
-
+  const settings = {
+    //dots: true,
+    infinite: false,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false
+  }
   return (
     <div className="department">
       <div className="title">
@@ -40,21 +48,26 @@ export const Department = () => {
         <div className="line" />
         部门介绍
       </div>
-      {departments.map((department, i) => {
-        const { name, introduction, photo } = department
+      <Slider {...settings}>
+        {departments.map((department, i) => {
+          const { name, introduction, photo } = department
 
-        return (
-          <div className="department-card" key={i}>
-            <div className="picture">
-              <img src={photo} alt="" />
+          return (
+            <div className="department-card" key={i}>
+              <div className="box-shadow">
+                <div className="picture">
+                  <img src={photo} alt="" />
+                </div>
+                <div className="copywriting">
+                  <div className="name">{name}</div>
+                  <div className="intro">{introduction}</div>
+                </div>
+              </div>
+
             </div>
-            <div className="copywriting">
-              <div className="name">{name}</div>
-              <div className="intro">{introduction}</div>
-            </div>
-          </div>
-        )
-      })}
+          )
+        })}
+      </Slider>
     </div>
   )
 }

@@ -12,10 +12,11 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     .red_rock_logo{
         min-width: 306px;
         min-height: 46px;
-        margin-left: 12vw;
+        margin-left: 3vw;
         background-image: url("../../../assets/logo/redrock_logo.png");
         background-size: cover;
         transform: scale(0.7);
