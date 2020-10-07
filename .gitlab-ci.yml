@@ -39,6 +39,7 @@ build:
 
 deploy_dev:
   stage: deploy
+  when: manual
   tags:
     - redrock-fe
   script:
