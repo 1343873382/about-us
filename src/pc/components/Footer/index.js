@@ -9,31 +9,40 @@ export const Footer = () => {
   return (
     <footer>
       <div className="other-inner-footer">
-        <div className="red_rock_logo"></div>
-        <div className="footer-title-about-us">
-          <p>ABOUT US</p>
-          {
-            title2.map((e, key) => {
-              return (
-                <li key={key}>{e}</li>
-              )
-            })
-          }
+        <div className="footer_flex_box">
+          <div className="red_rock_logo"></div>
+          <div className="title_flex_box">
+            <div className="footer-title-about-us">
+              <p>ABOUT US</p>
+              {
+                title2.map((e, key) => {
+                  return (
+                    <li key={key}>{e}</li>
+                  )
+                })
+              }
+            </div>
+            <div className="footer-title-product">
+              <p>我们的产品</p>
+              {
+                all_product.map((e, key) => {
+                  return (
+                    <li key={key} onClick={() => {
+                      window.open(all_product_src[key])
+                    }}>{e}</li>
+                  )
+                })
+              }
+            </div>
+          </div>
+
+          <div className="Qrcodes">
+            <div className="QrCode1"></div>
+            <div className="QrCode2"></div>
+          </div>
+
         </div>
-        <div className="footer-title-product">
-          <p>我们的产品</p>
-          {
-            all_product.map((e, key) => {
-              return (
-                <li key={key} onClick={() => {
-                  window.open(all_product_src[key])
-                }}>{e}</li>
-              )
-            })
-          }
-        </div>
-        <div className="QrCode1"></div>
-        <div className="QrCode2"></div>
+
       </div>
       <div className="inner-footer">
         <p >{footer.copyright}</p>

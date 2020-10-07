@@ -46,13 +46,21 @@
       transition: .5s all linear;
       top: 40vh;
     }
+    .sidebar_flex_box{
+      width: 70vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .title_flex_box{
+        display: flex;
+        flex-direction: row;
+      }
+    }
 
 
     .red_rock_logo {
       width: 155px;
       height: 25px;
-      margin-left: 7vw;
-      margin-right: 21.3vw;
       transform: scale(1.1);
       background: url('../../../assets/logo/redrock_logo.png');
       background-size: 100% 100%;
@@ -67,7 +75,7 @@
 
     .text-box {
       width: 60px;
-      margin-right: 3vw;
+      margin-left: 3vw;
       padding: 7px 0;
       border-bottom: solid rgba(255, 255, 255, 0) 0px;
       cursor: pointer;

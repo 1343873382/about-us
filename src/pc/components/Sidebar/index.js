@@ -24,41 +24,47 @@ export const Sidebar = props => {
           onClick={() => setCurrentIndex(1)}
         >
         </div>
-        <div
-          className="red_rock_logo"
-          onClick={() => setCurrentIndex(1)}
-        >
+        <div className="sidebar_flex_box">
+          <div
+            className="red_rock_logo"
+            onClick={() => setCurrentIndex(1)}
+          >
+          </div>
+          <div className="title_flex_box">
+            <div
+              className={setClass(2)}
+              onClick={() => setCurrentIndex(2)}
+            >
+              <div className="link">{title.aboutus}</div>
+            </div>
+            <div
+              className={setClass(3)}
+              onClick={() => setCurrentIndex(3)}
+            >
+              <div className="link">{title.product}</div>
+            </div>
+            <div
+              className={setClass(4)}
+              onClick={() => setCurrentIndex(4)}
+            >
+              <div className="link">{title.department}</div>
+            </div>
+            <div
+              className={setClass(5)}
+              onClick={() => setCurrentIndex(5)}
+            >
+              <div className="link">{title.destination}</div>
+            </div>
+            <div
+              className={setClass(6)}
+              onClick={() => setCurrentIndex(6)}
+            >
+              <div className="link">{title.joinus}</div>
+            </div>
+          </div>
+
         </div>
-        <div
-          className={setClass(2)}
-          onClick={() => setCurrentIndex(2)}
-        >
-          <div className="link">{title.aboutus}</div>
-        </div>
-        <div
-          className={setClass(3)}
-          onClick={() => setCurrentIndex(3)}
-        >
-          <div className="link">{title.product}</div>
-        </div>
-        <div
-          className={setClass(4)}
-          onClick={() => setCurrentIndex(4)}
-        >
-          <div className="link">{title.department}</div>
-        </div>
-        <div
-          className={setClass(5)}
-          onClick={() => setCurrentIndex(5)}
-        >
-          <div className="link">{title.destination}</div>
-        </div>
-        <div
-          className={setClass(6)}
-          onClick={() => setCurrentIndex(6)}
-        >
-          <div className="link">{title.joinus}</div>
-        </div>
+
       </div>
     </div>
   )
