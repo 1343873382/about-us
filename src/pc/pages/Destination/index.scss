@@ -1,6 +1,5 @@
 .destination {
   background: #fafafa;
-  font-family: 'Microsoft YaHei';
   .carousel {
     width: 1000px;
     position: relative;
@@ -25,10 +24,11 @@
       }
 
       .year {
+        font-family: 'hin';
         color: #f27f7f;
         font-size: 20px;
         margin-top: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
 
       .line {
@@ -74,7 +74,7 @@
   }
   .slick-dots {
     position: absolute;
-    top:107%;
+    top:90%;
   }
   .slick-dots li{
     width: 25px;

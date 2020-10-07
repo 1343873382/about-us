@@ -25,7 +25,7 @@
       cursor: pointer;
       width: 70px;
       height: 113px;
-      top: 70vh;
+      top: 80vh;
       left: 90vw;
       background-image: url("../../../assets/home.png");
       background-size: cover;
@@ -46,7 +46,7 @@
       width: 155px;
       height: 25px;
       margin-left: 200px;
-      margin-right: 240px;
+      margin-right: 271px;
       background: url('../../../assets/logo/redrock_logo.png');
       background-size: 100% 100%;
       cursor: pointer;
@@ -67,13 +67,13 @@
       transition: all .3s;
       font-size: 16px;
       &:hover {
-        border-bottom: solid #ee3a3a 2px;
+        //border-bottom: solid #ee3a3a 2px;
         color: #ee3a3a;
       }
     }
 
     .text-box-active {
-      border-bottom: solid #ee3a3a 2px;
+      //border-bottom: solid #ee3a3a 2px;
       color: #ee3a3a;
     }
 
