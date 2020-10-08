@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <script>
-      // location.href.split('/').splice(-1)[0] 为当前index.html或mobile.html页面
-      if (location.href.split('/').splice(-1)[0] !== 'mobile.html') {
-        if (/mobile/i.test(navigator.userAgent)) {
-          location.href = './mobile.html'
-        }
-      } else {
-        if (!(/mobile/i.test(navigator.userAgent))) {
-          location.href = './'
-        }
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <script>
+    // location.href.split('/').splice(-1)[0] 为当前index.html或mobile.html页面
+    if (location.href.split('/').splice(-1)[0] !== 'mobile.html') {
+      if (/mobile/i.test(navigator.userAgent)) {
+        location.href = './mobile.html'
       }
-    </script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      charset="UTF-8"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-    />
-    <!--
+    } else {
+      if (!(/mobile/i.test(navigator.userAgent))) {
+        location.href = './'
+      }
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" charset="UTF-8"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -42,12 +36,23 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>红岩网校 - 关于我们</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>红岩网校 - 关于我们</title>
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?217f0d7270e06220a2ec9fbc0877488d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -57,30 +62,31 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
-  <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-  <script src="https://wx.redrock.team/wx-api/share.js"></script>
-  <script>
-    WXSHARE.config({ debug: false })
-    WXSHARE.ready(function() {
-      var option = {
-        title: "红岩网校 - 关于我们",
-        link: "https://hongyan.cqupt.edu.cn/aboutus/",
-        imgUrl: "https://hongyan.cqupt.edu.cn/aboutus/favicon.ico",
-        desc: "红岩网校工作站介绍网站",
-        type: "",
-        success: function() {
-          console.log("分享成功")
-        },
-        cancel: function() {
-          console.log("取消分享")
-        }
+</body>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://wx.redrock.team/wx-api/share.js"></script>
+<script>
+  WXSHARE.config({ debug: false })
+  WXSHARE.ready(function () {
+    var option = {
+      title: "红岩网校 - 关于我们",
+      link: "https://hongyan.cqupt.edu.cn/aboutus/",
+      imgUrl: "https://hongyan.cqupt.edu.cn/aboutus/favicon.ico",
+      desc: "红岩网校工作站介绍网站",
+      type: "",
+      success: function () {
+        console.log("分享成功")
+      },
+      cancel: function () {
+        console.log("取消分享")
       }
-      wx.onMenuShareTimeline(option)
-      wx.onMenuShareAppMessage(option)
-      wx.onMenuShareQQ(option)
-      wx.onMenuShareWeibo(option)
-      wx.onMenuShareQZone(option)
-    })
-  </script>
+    }
+    wx.onMenuShareTimeline(option)
+    wx.onMenuShareAppMessage(option)
+    wx.onMenuShareQQ(option)
+    wx.onMenuShareWeibo(option)
+    wx.onMenuShareQZone(option)
+  })
+</script>
+
 </html>
