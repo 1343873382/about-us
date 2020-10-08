@@ -10,7 +10,10 @@ export const Sidebar = props => {
     if (index < 4) {
       return `home hide`
     }
-    else if (index >= 4 && index < 6) {
+    else if (index === 4) {
+      return `home show white-color`
+    }
+    else if (index > 4 && index < 6) {
       return `home show`
     } else if (index === 6) {
       return `home bottom`
