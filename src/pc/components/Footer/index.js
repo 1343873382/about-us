@@ -45,9 +45,11 @@ export const Footer = () => {
 
       </div>
       <div className="inner-footer">
-        <p >{footer.copyright}</p>
-        <p>{footer.address}</p>
-        <p>{footer.email}</p>
+        <div className="footer_content_flex">
+          <p >{footer.copyright}</p>
+          <p>{footer.address}</p>
+          <p>{footer.email}</p>
+        </div>
       </div>
     </footer>
   )
