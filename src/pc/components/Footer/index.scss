@@ -101,7 +101,7 @@ footer {
 
 
   .inner-footer {
-    width: 1000px;
+    width: 100vw;
     height: 100%;
     margin: 0 auto;
     font-style: normal;
@@ -116,15 +116,6 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-    }
-    p:nth-child(1){
-      margin-left: 1vw;
-    }
-    p:nth-child(2){
-      
-    }
-    p:nth-child(3){
-      
     }
   }
 }
