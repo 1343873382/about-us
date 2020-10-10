@@ -49,6 +49,10 @@ footer {
           font-size: 8px;
           line-height: 26px;
           list-style: none;
+          transition: all 0.5s linear;
+          &:hover{
+            color: #ee3a3a;
+          }
         }
       }
       .footer-title-product{

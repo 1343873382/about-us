@@ -18,7 +18,7 @@ export const Footer = (props) => {
                 title2.map((e, key) => {
                   return (
                     <li key={key} onClick={() => {
-                      setCurrentIndex(key + 1)
+                      setCurrentIndex(key + 2)
                       console.log(key + 1);
                     }}>{e}</li>
                   )
