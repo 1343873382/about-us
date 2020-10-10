@@ -58,7 +58,10 @@ export const App = () => {
       <Product className={setClass(3)} />
       <Department className={setClass(4)} />
       <Destination className={setClass(5)} />
-      <Joinus className={setClass(6)} />
+      <Joinus className={setClass(6)}
+        index={currentIndex}
+        isScrolling={isScrolling}
+        setCurrentIndex={setCurrentIndex} />
     </>
   )
 }

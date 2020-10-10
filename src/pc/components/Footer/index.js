@@ -3,9 +3,9 @@ import React, { useContext } from "react"
 import { Context } from "../../Context"
 import './index.scss'
 
-export const Footer = () => {
+export const Footer = (props) => {
   const { footer, title2, all_product, all_product_src } = useContext(Context)
-
+  const { setCurrentIndex } = props
   return (
     <footer>
       <div className="other-inner-footer">
@@ -17,7 +17,10 @@ export const Footer = () => {
               {
                 title2.map((e, key) => {
                   return (
-                    <li key={key}>{e}</li>
+                    <li key={key} onClick={() => {
+                      setCurrentIndex(key + 1)
+                      console.log(key + 1);
+                    }}>{e}</li>
                   )
                 })
               }

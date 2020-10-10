@@ -4,6 +4,7 @@ import { Context } from '../../Context'
 import './index.scss'
 
 export const Joinus = props => {
+  const { index, isScrolling, setCurrentIndex } = props
   const { joinus } = useContext(Context)
   const { p1, p2, p3, button } = joinus
   return (
@@ -17,7 +18,10 @@ export const Joinus = props => {
         </div>
         <div className="girl"></div>
       </div>
-      <Footer />
+      <Footer
+        index={index}
+        isScrolling={isScrolling}
+        setCurrentIndex={setCurrentIndex} />
     </div>
   )
 }
