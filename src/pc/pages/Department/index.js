@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-07-10 17:01:13
- * @LastEditTime: 2020-10-11 12:32:42
+ * @LastEditTime: 2020-10-11 14:13:27
  * @LastEditors: 代码是写出来给人看的，附带能在机器上运行
  * @Description: In User Settings Edit
  * @FilePath: \about-us\src\pc\pages\Department\index.js
@@ -50,11 +50,7 @@ export const Department = props => {
           ))}
         </Slider>
       </div>
-      <div className="lines line1"></div>
-      <div className="lines line2"></div>
-      <div className="lines line3"></div>
-      <div className="lines line4"></div>
-      <div className="lines line5"></div>
+
     </div>
   );
 };
