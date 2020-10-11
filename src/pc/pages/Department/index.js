@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-07-10 17:01:13
- * @LastEditTime: 2020-10-11 14:13:27
+ * @LastEditTime: 2020-10-11 17:23:22
  * @LastEditors: 代码是写出来给人看的，附带能在机器上运行
  * @Description: In User Settings Edit
  * @FilePath: \about-us\src\pc\pages\Department\index.js
@@ -12,7 +12,7 @@ import Slider from "react-slick";
 import "./index.scss";
 
 export const Department = props => {
-  const { title, department } = useContext(Context);
+  const { department } = useContext(Context);
   const { departments } = department;
   const settings = {
     infinite: true,
