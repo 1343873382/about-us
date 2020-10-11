@@ -34,13 +34,13 @@ class Swiper extends React.Component {
             this.ArrReSort('start')
             setTimeout(() => {
                 this.ArrReSort('start')
-            }, 300)
+            }, 400)
 
         } else if (name === 'normal2') {
             this.ArrReSort('end')
             setTimeout(() => {
                 this.ArrReSort('end')
-            }, 300)
+            }, 400)
         }
         this.setState({ dir: dirCopy }); // 保存重新排列的数组 并触发render
     }

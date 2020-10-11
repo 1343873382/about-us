@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-07-10 17:01:13
- * @LastEditTime: 2020-10-11 12:16:13
+ * @LastEditTime: 2020-10-11 12:32:42
  * @LastEditors: 代码是写出来给人看的，附带能在机器上运行
  * @Description: In User Settings Edit
  * @FilePath: \about-us\src\pc\pages\Department\index.js
@@ -28,13 +28,12 @@ export const Department = props => {
 
   return (
     <div className={`department page ${props.className}`}>
-      <div className="title">{title.department}</div>
       <div className="carousel">
         <Slider {...settings}>
           {departments.map((e, i) => (
             <div key={i}>
               <div className="side">
-                <div className="mark"></div>
+                {/* <div className="mark"></div> */}
                 <img
                   src={e.photo}
                   alt=""

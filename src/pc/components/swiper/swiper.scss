@@ -1,41 +1,41 @@
-.root{
+.root {
     width: 100%;
     //background: #ccc;
     margin-top: 50px;
-    .slideBox{
+    .slideBox {
         width: 50%;
         height: 15vw;
         margin: 0 auto;
         position: relative;
-       // background: #ccc;
+        // background: #ccc;
 
-       .info{
-           display: flex;
-           flex-direction: row;
-       }
+        .info {
+            display: flex;
+            flex-direction: row;
+        }
 
-        .slide{
+        .slide {
             width: 533px;
             height: 435px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: #FFFFFF;
+            background: #ffffff;
             box-shadow: 0px 8px 15px 5px rgba(103, 47, 123, 0.03);
             border-radius: 8px;
             position: absolute;
             transition: all 0.3s ease-in-out;
             user-select: none; // 禁止用户选中(防止图片被选中时变色);
-            .info{
+            .info {
                 width: 308px;
-                .info-title{
+                .info-title {
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
                     line-height: 36px;
                 }
-                .info-subtitle{
+                .info-subtitle {
                     font-style: normal;
                     font-weight: normal;
                     font-size: 14px;
@@ -43,9 +43,9 @@
                     margin-top: 18px;
                     margin-left: 20px;
                     color: #666666;
-                } 
+                }
             }
-            .introduce{
+            .introduce {
                 width: 308px;
                 position: relative;
                 transform: translateX(-5px);
@@ -55,16 +55,18 @@
                 color: #666666;
                 line-height: 24px;
             }
-            
-            &:hover{ // 鼠标经过时显示小手样式
-            cursor: pointer;
+
+            &:hover {
+                // 鼠标经过时显示小手样式
+                cursor: pointer;
             }
 
-            img{
+            img {
                 border-radius: 8px 8px 0px 0px;
                 width: 100%;
             }
-            .masking{ // 蒙板，有个灰度渐变的效果
+            .masking {
+                // 蒙板，有个灰度渐变的效果
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -72,30 +74,29 @@
                 height: 100%;
                 box-shadow: 0px 8px 15px 5px rgba(103, 47, 123, 0.03);
                 border-radius: 8px;
-                background: rgba(0, 0, 0, .15);
+                background: rgba(0, 0, 0, 0.15);
                 transition: all 0.3s 0.2s linear;
             }
 
-            &.middle{ // 此为中间展示的那张
+            &.middle {
+                // 此为中间展示的那张
                 left: 10%;
                 bottom: 0%;
                 width: 80%;
                 top: 0%;
                 z-index: 33;
-                .masking{
-                    background: transparent;
-                  }
-                
             }
-            &.start{ // 第一张则为左侧那张
+            &.start {
+                // 第一张则为左侧那张
                 right: -50%;
                 bottom: 0%;
                 top: 5%;
                 width: 75%;
                 z-index: 22;
                 transform: scale(0.9);
-                }
-            &.end{ // 最后一张及右侧那张
+            }
+            &.end {
+                // 最后一张及右侧那张
                 left: -50%;
                 bottom: 0%;
                 top: 5%;
@@ -103,7 +104,8 @@
                 z-index: 22;
                 transform: scale(0.9);
             }
-            &.normal2{ // 此为隐藏图片的样式
+            &.normal2 {
+                // 此为隐藏图片的样式
                 left: -100%;
                 bottom: 0%;
                 top: 10%;
@@ -111,7 +113,8 @@
                 z-index: 11;
                 transform: scale(0.8);
             }
-            &.normal1{ // 此为隐藏图片的样式
+            &.normal1 {
+                // 此为隐藏图片的样式
                 right: -100%;
                 bottom: 0%;
                 top: 10%;
