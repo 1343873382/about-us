@@ -1,7 +1,7 @@
 /*
  * @Author: lin
  * @Date: 2019-07-10 17:01:13
- * @LastEditTime: 2020-10-11 11:26:43
+ * @LastEditTime: 2020-10-11 19:59:43
  * @FilePath: \about-us\src\data\public\copywriting.js
  */
 export const copywritingData = {
@@ -22,10 +22,10 @@ export const copywritingData = {
     copywriting: `红岩网校工作站是学校唯一一个从事互联网产品开发运营的校级学生组织，在校团委的指导下，由学生自我管理，多年来走出了一大批优秀的IT互联网人才，深受腾讯、阿里巴巴、字节跳动、华为等知名互联网企业的青睐。 团队先后获评“全国五四红旗团支部”、“团中央新媒体专业工作室”、“重庆市IT杰出青年群体”等系列荣誉。开发上线了“重邮小帮手”微信公众号，“重邮帮”微信小程序、“掌上重邮”APP等一系列优秀的校园网络产品，深受广大师生好评。`
   },
   carousel: [
-    'http://cdn.redrock.team/about-us_banner_0.png',
-    'http://cdn.redrock.team/about-us_banner_1.png',
-    'http://cdn.redrock.team/about-us_banner_2.png',
-    'http://cdn.redrock.team/about-us_banner_3.png'
+    'https://s1.ax1x.com/2020/10/11/0gGYbF.jpg',
+    'https://s1.ax1x.com/2020/10/11/0gGGuT.jpg',
+    'https://s1.ax1x.com/2020/10/11/0gGJDU.jpg',
+    'https://s1.ax1x.com/2020/10/11/0gG3vV.jpg'
   ],
   department: {
     copywriting: '红岩网校工作站工作模式与当前互联网产品开发模式相同。五个部门各司其职，共同协力打造服务于学生的各类产品。',
