@@ -4,9 +4,9 @@ footer {
   position: absolute;
   bottom: 0;
   font-size: 14px;
-  background: #FBFBFB;
+  background: #fbfbfb;
   //color: #322d98;
-  .other-inner-footer{ 
+  .other-inner-footer {
     width: 100%;
     height: 220px;
     display: flex;
@@ -14,95 +14,91 @@ footer {
     align-items: center;
     justify-content: center;
 
-    .footer_flex_box{
+    .footer_flex_box {
       width: 62.5vw;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
     }
-    .red_rock_logo{
-        width: 255px;
-        height: 38px;
-        background-image: url("../../../assets/logo/redrock_logo.png");
-        background-size: cover;
-        
-      }
-      .title_flex_box{
-        width: 14vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
+    .red_rock_logo {
+      width: 255px;
+      height: 38px;
+      background-image: url("../../../assets/logo/redrock_logo.png");
+      background-size: cover;
+    }
+    .title_flex_box {
+      width: 14vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-      .footer-title-about-us{
-        height: 150px;
-        p{
-          width: 70px;
-          font-size: 10px;
-          margin-bottom: 20px;
-        }
-        li{
-          cursor: pointer;
-          width: 60px;
-          color: #666666;
-          font-size: 8px;
-          line-height: 26px;
-          list-style: none;
-          transition: all 0.5s linear;
-          &:hover{
-            color: #ee3a3a;
-          }
+    .footer-title-about-us {
+      height: 150px;
+      p {
+        width: 70px;
+        font-size: 10px;
+        margin-bottom: 20px;
+      }
+      li {
+        cursor: pointer;
+        width: 60px;
+        color: #666666;
+        font-size: 8px;
+        line-height: 26px;
+        list-style: none;
+        transition: all 0.5s linear;
+        &:hover {
+          color: #ee3a3a;
         }
       }
-      .footer-title-product{
-        height: 150px;
-        p{
-          width: 70px;
-          font-size: 10px;
-          margin-bottom: 20px;
-        }
-        li{
-          cursor: pointer;
-          width: 60px;
-          color: #666666;
-          font-size: 8px;
-          line-height: 26px;
-          list-style: none;
-        }
+    }
+    .footer-title-product {
+      height: 150px;
+      p {
+        width: 70px;
+        font-size: 10px;
+        margin-bottom: 20px;
       }
-      .Qrcodes{
-        display: flex;
-        flex-direction: row;
-
+      li {
+        cursor: pointer;
+        width: 60px;
+        color: #666666;
+        font-size: 8px;
+        line-height: 26px;
+        list-style: none;
       }
-      .QrCode1{
-        width: 100px;
-        height: 100px;
-        background-image: url("../../../assets/footer/bacteria.png");
-        background-size: cover;
-        &::before{
-          position: relative;
-          content: "红岩网校";
-          left: 25px;
-          top: 100px;
-        }
+    }
+    .Qrcodes {
+      display: flex;
+      flex-direction: row;
+    }
+    .QrCode1 {
+      width: 100px;
+      height: 100px;
+      background-image: url("../../../assets/footer/bacteria.png");
+      background-size: cover;
+      &::before {
+        position: relative;
+        content: "红岩网校";
+        left: 25px;
+        top: 100px;
       }
-      .QrCode2{
-        width: 100px;
-        height: 100px;
-        background-image: url("../../../assets/footer/cyxbs.png");
-        background-size: cover;
-        &::before{
-          position: relative;
-          content: "重邮小帮手";
-          left: 15px;
-          top: 100px;
-        }
+    }
+    .QrCode2 {
+      width: 100px;
+      height: 100px;
+      background-image: url("../../../assets/footer/cyxbs.png");
+      background-size: cover;
+      &::before {
+        position: relative;
+        content: "重邮小帮手";
+        left: 15px;
+        top: 100px;
       }
-    }  
-    
-
+    }
+  }
 
   .inner-footer {
     width: 100vw;
@@ -115,7 +111,7 @@ footer {
     color: #999999;
     display: flex;
     justify-content: center;
-    .footer_content_flex{
+    .footer_content_flex {
       width: 62.5vw;
       display: flex;
       flex-direction: row;

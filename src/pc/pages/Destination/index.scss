@@ -1,9 +1,16 @@
 .destination {
   background: #fafafa;
+  .container {
+    width: 100vw;
+    display: flex;
+  }
   .carousel {
-    width: 1000px;
+    width: 62.5vw;
+    height: 60vh;
     position: relative;
-    top: 120px;
+    top: 10vh;
+    box-shadow: 0px 4px 15px 10px rgba(103, 47, 123, 0.02);
+    border-radius: 8px;
     cursor: pointer;
 
     div {
@@ -11,10 +18,10 @@
     }
 
     .card {
-      width: 400px;
-      height: 450px;
+      width: 26vw;
+      height: 40vh;
       position: relative;
-      left: 50px;
+      left: 2vw;
 
       .row {
         width: 100%;
@@ -24,7 +31,7 @@
       }
 
       .year {
-        font-family: 'hin';
+        font-family: "hin";
         color: #f27f7f;
         font-size: 20px;
         margin-top: 20px;
@@ -54,50 +61,49 @@
     height: 36px;
     position: absolute;
     z-index: 999;
-    top: 227px;
+    top: 30vh;
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &:hover {
       transform: scale(1.2);
     }
   }
   .prev {
-    left: -35px;
-    background: url('../../../assets/left2.png');
+    left: -80px;
+    background: url("../../../assets/left2.png");
     background-size: 100% 100%;
   }
   .next {
-    right: -30px;
-    background: url('../../../assets/right2.png');
+    right: -78px;
+    background: url("../../../assets/right2.png");
     background-size: 100% 100%;
   }
   .slick-dots {
     position: absolute;
-    top:97%;
+    top: 65vh;
   }
-  .slick-dots li{
+  .slick-dots li {
     width: 25px;
-    
   }
   .slick-dots li.slick-active button:before {
     opacity: 1;
     background-color: #f94141;
     border-radius: 15px;
     transform: translateX(-50%);
-    content:"";
+    content: "";
     width: 30px;
-    height: 4px; 
-    transition: all .4s;
+    height: 4px;
+    transition: all 0.4s;
   }
   .slick-dots li button::before {
-    background-color: #FFA8A8;
+    background-color: #ffa8a8;
     border-radius: 15px;
     opacity: 1;
     transform: translateX(-50%);
-    content:"";
+    content: "";
     width: 20px;
     height: 4px;
-    transition: all .4s;
+    transition: all 0.4s;
   }
 }

@@ -26,7 +26,10 @@ export const Aboutus = props => {
             })
           }
         </div>
-        <p className="copywriting">{copywriting}</p>
+        <div className="about_us_content_box">
+          <p className="copywriting">{copywriting}</p>
+        </div>
+
         <div className="bg"></div>
         {/* <div className="quotes"></div> */}
       </div>

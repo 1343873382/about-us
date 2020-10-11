@@ -32,10 +32,15 @@ class Swiper extends React.Component {
             dirCopy.push(shift);  // 添加到数组尾部
         } else if (name === 'normal1') {
             this.ArrReSort('start')
-            this.ArrReSort('start')
+            setTimeout(() => {
+                this.ArrReSort('start')
+            }, 300)
+
         } else if (name === 'normal2') {
             this.ArrReSort('end')
-            this.ArrReSort('end')
+            setTimeout(() => {
+                this.ArrReSort('end')
+            }, 300)
         }
         this.setState({ dir: dirCopy }); // 保存重新排列的数组 并触发render
     }

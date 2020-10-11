@@ -15,8 +15,8 @@
       width: 18vw;
       height: 20vh;
       //margin: 30px;
-      margin:0vh 0vh 7vh 0vh;
-      background-color: #FFFFFF;
+      margin: 0vh 0vh 7vh 0vh;
+      background-color: #ffffff;
       box-shadow: 0px 4px 15px 10px rgba(103, 47, 123, 0.03);
       border-radius: 8px;
       display: flex;
@@ -24,36 +24,36 @@
       justify-content: flex-start;
       align-items: center;
       transition: all 1s;
-      &:hover{
+      &:hover {
         transform: scale(1.2);
-        color: #FF635A;
+        color: #ff635a;
       }
       img {
         position: relative;
         top: -30px;
       }
     }
-    $img-width:'130','100','120','120','130','130';
-    $img-height:'100','100','100','100','100','100';
-    @for $i from 1 through 6{
-      .icon:nth-child(#{$i}){
-        >img{
-            width: #{nth($img-width,$i)}px;
-            height: #{nth($img-height,$i)}px;
+    $img-width: "130", "100", "120", "120", "130", "130";
+    $img-height: "100", "100", "100", "100", "100", "100";
+    @for $i from 1 through 6 {
+      .icon:nth-child(#{$i}) {
+        > img {
+          width: #{nth($img-width, $i)}px;
+          height: #{nth($img-height, $i)}px;
         }
-        p{
-            top: -20px;
-            margin: 0;
-            position: relative; 
+        p {
+          top: -20px;
+          margin: 0;
+          position: relative;
         }
-        p:nth-child(2){
-          font-family: 'hin';
+        p:nth-child(2) {
+          font-family: "hin";
           font-style: normal;
           font-weight: 500;
           font-size: 25px;
           line-height: 30px;
         }
-        p:nth-child(3){
+        p:nth-child(3) {
           font-style: normal;
           font-weight: normal;
           font-size: 14px;
@@ -62,14 +62,19 @@
       }
     }
   }
+  .about_us_content_box {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
 
   .copywriting {
-   // font-family: "";
+    // font-family: "";
     width: 62.5vw;
     position: relative;
     top: 17vh;
     margin: 0 auto;
-    color:#666666;
+    color: #666666;
     font-size: 14px;
     line-height: 28px;
     text-indent: 28px;
@@ -78,12 +83,11 @@
   .bg {
     width: 700px;
     height: 620px;
-    background: url('../../../assets/ab-bg.png');
+    background: url("../../../assets/ab-bg.png");
     background-size: 100% 100%;
     position: fixed;
     right: 0;
     top: 40px;
     z-index: -1;
   }
-
 }

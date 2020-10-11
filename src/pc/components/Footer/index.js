@@ -22,7 +22,7 @@ export const Footer = (props) => {
                       console.log(key + 1);
                     }}>{e}</li>
                   )
-                })
+                }) 
               }
             </div>
             <div className="footer-title-product">
