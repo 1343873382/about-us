@@ -25,12 +25,12 @@
     .all-title {
       display: flex;
       margin-top: 4.5vw;
-      
+
       .title {
         width: 90px;
         font-size: 15px;
         line-height: 22px;
-        color: #3E3D63;
+        color: #3e3d63;
         font-style: normal;
         font-weight: 500;
       }
@@ -38,7 +38,7 @@
       .subtitle {
         font-size: 12px;
         margin-left: 3vw;
-        color: #6F6CDF;
+        color: #6f6cdf;
       }
     }
 
@@ -54,10 +54,9 @@
     position: absolute;
     right: 4%;
   }
-  .slide-carousel{
-    
-    .card{
-      height: 57vh;
+  .slide-carousel {
+    .card {
+      height: 380px;
     }
   }
 }
