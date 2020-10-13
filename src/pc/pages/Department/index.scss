@@ -5,9 +5,9 @@
   .carousel {
     position: relative;
     width: 62.5vw;
-    height: 76vh;
+    height: 83vh;
     cursor: pointer;
-    transform: translateY(40px);
+    transform: translateY(2px);
     div {
       width: 100%;
       outline: none;
@@ -19,7 +19,7 @@
       position: relative;
       img {
         width: 62.5vw;
-        height: 60vh;
+        height: auto;
         background-size: cover;
       }
       .mark {
@@ -31,6 +31,7 @@
         height: 200px !important;
         position: relative;
         bottom: 0;
+        transform: translateY(10px);
         color: #000000;
         .line_flex {
           display: flex;
@@ -53,7 +54,7 @@
           width: 62.5vw;
           font-size: 16px;
           line-height: 26px;
-          margin-top: 22px;
+          margin-top: 9px;
           color: #666666;
         }
       }
