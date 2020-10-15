@@ -92,16 +92,17 @@
   .vertical-dots li {
     position: relative;
     width: 10.4vw;
-    height: 62px;
+    height: auto;
     //margin-top: 35px;
     cursor: pointer;
   }
+
   .vertical-dots li button {
     font-size: 0;
     line-height: 0;
     //display: block;
     width: 10.4vw;
-    height: 63px;
+    height: 8vh;
     padding: 5px;
     cursor: pointer;
     color: transparent;
