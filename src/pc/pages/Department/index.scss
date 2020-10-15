@@ -91,7 +91,15 @@
   }
   .vertical-dots li {
     position: relative;
-    width: 10.4vw;
+    width: 10.6vw;
+    height: auto;
+    //margin-top: 35px;
+    cursor: pointer;
+  }
+
+  .vertical-dots li:nth-child(2) {
+    position: relative;
+    width: 12vw;
     height: auto;
     //margin-top: 35px;
     cursor: pointer;
@@ -101,7 +109,7 @@
     font-size: 0;
     line-height: 0;
     //display: block;
-    width: 10.4vw;
+    width: 10.6vw;
     height: 8vh;
     padding: 5px;
     cursor: pointer;
@@ -127,35 +135,37 @@
   }
 
   .vertical-dots li:nth-child(1) button {
+    width: 10.1vw;
     background: url("../../../assets/department/leader.png");
     background-color: #ffffff;
     background-size: 100% 100%;
-    &::before {
-      content: "332452";
-      z-index: 111;
-    }
   }
   .vertical-dots li:nth-child(2) button {
+    width: 12vw;
     background: url("../../../assets/department/product.png");
     background-color: #ffffff;
     background-size: 100% 100%;
   }
   .vertical-dots li:nth-child(3) button {
+    width: 10.1vw;
     background: url("../../../assets/department/design.png");
     background-color: #ffffff;
     background-size: 100% 100%;
   }
   .vertical-dots li:nth-child(4) button {
+    width: 10.1vw;
     background: url("../../../assets/department/web.png");
     background-color: #ffffff;
     background-size: 100% 100%;
   }
   .vertical-dots li:nth-child(5) button {
+    width: 10.1vw;
     background: url("../../../assets/department/moblie.png");
     background-color: #ffffff;
     background-size: 100% 100%;
   }
   .vertical-dots li:nth-child(6) button {
+    width: 10.1vw;
     background: url("../../../assets/department/sre.png");
     background-color: #ffffff;
     background-size: 100% 100%;
