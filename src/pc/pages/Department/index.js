@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-07-10 17:01:13
- * @LastEditTime: 2020-10-12 16:39:26
+ * @LastEditTime: 2020-10-15 22:48:34
  * @LastEditors: 代码是写出来给人看的，附带能在机器上运行
  * @Description: In User Settings Edit
  * @FilePath: \about-us\src\pc\pages\Department\index.js
@@ -33,7 +33,7 @@ export const Department = props => {
           {departments.map((e, i) => (
             <div key={i}>
               <div className="side">
-                {/* <div className="mark"></div> */}
+                <div className="mark"></div>
                 <img
                   src={e.photo}
                   alt=""
