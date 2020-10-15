@@ -1,7 +1,7 @@
 /*
  * @Author: lin
  * @Date: 2019-07-10 17:01:13
- * @LastEditTime: 2020-10-11 19:59:43
+ * @LastEditTime: 2020-10-15 20:38:18
  * @FilePath: \about-us\src\data\public\copywriting.js
  */
 export const copywritingData = {
@@ -34,37 +34,37 @@ export const copywritingData = {
         job: '站长',
         name: '郑煜',
         intro: '',
-        avatar: require('../../assets/avatar/nal.jpg')
+        avatar: require('../../assets/avatar/zy.jpg')
       },
       {
         job: '副站长',
         name: '刘宇锋',
         intro: '分管产品策划及运营部',
-        avatar: require('../../assets/avatar/ljh.jpg')
+        avatar: require('../../assets/avatar/lyf.jpg')
       },
       {
         job: '副站长',
         name: '吴嫣冉',
         intro: '分管视觉设计部',
-        avatar: require('../../assets/avatar/hyq.jpg')
+        avatar: require('../../assets/avatar/wyr.jpg')
       },
       {
         job: '副站长',
         name: '刘静',
         intro: '分管Web研发部',
-        avatar: require('../../assets/avatar/hc.jpg')
+        avatar: require('../../assets/avatar/lj.jpg')
       },
       {
         job: '副站长',
         name: '陈阳',
         intro: '分管移动开发部',
-        avatar: require('../../assets/avatar/lyr.jpg')
+        avatar: require('../../assets/avatar/cy.jpg')
       },
       {
         job: '副站长',
         name: '张开宇',
         intro: '分管运维安全部',
-        avatar: require('../../assets/avatar/ssy.jpg')
+        avatar: require('../../assets/avatar/zky.jpg')
       }
     ],
     departments: [

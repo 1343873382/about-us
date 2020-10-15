@@ -7,7 +7,7 @@
     width: 62.5vw;
     height: 83vh;
     cursor: pointer;
-    transform: translateY(2px);
+    transform: translateY(1px);
     div {
       width: 100%;
       outline: none;
@@ -81,6 +81,13 @@
     &:hover {
       opacity: 1;
     }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 62.5vw;
+      height: 80vh;
+      background: transparent;
+    }
   }
   .vertical-dots li {
     position: relative;
@@ -118,23 +125,8 @@
     color: black;
   }
 
-  $titles: "站长团", "产品策划与运营部", "视觉设计部", "web研发部", "移动开发部", "运维安全部";
-
-  @for $i from 1 to 7 {
-    .vertical-dots li:nth-child(#{$i}) {
-      //background: url("../../../assets/button/2.png");
-      &::after {
-        position: relative;
-        content: "#{nth($titles,$i)}";
-        //transform: translateY(-50px);
-        top: -40px;
-        //left: -20%;
-      }
-    }
-  }
-
   .vertical-dots li:nth-child(1) button {
-    //background: url("../../../assets/button/2.png");
+    background: url("../../../assets/department/leader.png");
     background-color: #ffffff;
     background-size: 100% 100%;
     &::before {
@@ -143,62 +135,62 @@
     }
   }
   .vertical-dots li:nth-child(2) button {
-    //background: url("../../../assets/button/2.png");
+    background: url("../../../assets/department/product.png");
     background-color: #ffffff;
     background-size: 100% 100%;
   }
   .vertical-dots li:nth-child(3) button {
-    //background: url("../../../assets/button/3.png");
+    background: url("../../../assets/department/design.png");
     background-color: #ffffff;
     background-size: 100% 100%;
   }
   .vertical-dots li:nth-child(4) button {
-    //background: url("../../../assets/button/4.png");
+    background: url("../../../assets/department/web.png");
     background-color: #ffffff;
     background-size: 100% 100%;
   }
   .vertical-dots li:nth-child(5) button {
-    //background: url("../../../assets/button/5.png");
+    background: url("../../../assets/department/moblie.png");
     background-color: #ffffff;
     background-size: 100% 100%;
   }
   .vertical-dots li:nth-child(6) button {
-    //background: url("../../../assets/button/6.png");
+    background: url("../../../assets/department/sre.png");
     background-color: #ffffff;
     background-size: 100% 100%;
   }
   .vertical-dots li.slick-active:nth-child(1) button {
-    // background: url("../../../assets/button/1-active.png");
+    background: url("../../../assets/department/leader_on.png");
     background-color: #fb4d4d;
     background-size: 100% 100%;
     border-radius: 8px;
   }
   .vertical-dots li.slick-active:nth-child(2) button {
-    //background: url("../../../assets/button/2-active.png");
+    background: url("../../../assets/department/product_on.png");
     background-color: #fb4d4d;
     background-size: 100% 100%;
     border-radius: 8px;
   }
   .vertical-dots li.slick-active:nth-child(3) button {
-    // background: url("../../../assets/button/3-active.png");
+    background: url("../../../assets/department/design_on.png");
     background-color: #fb4d4d;
     background-size: 100% 100%;
     border-radius: 8px;
   }
   .vertical-dots li.slick-active:nth-child(4) button {
-    // background: url("../../../assets/button/4-active.png");
+    background: url("../../../assets/department/web_on.png");
     background-color: #fb4d4d;
     background-size: 100% 100%;
     border-radius: 8px;
   }
   .vertical-dots li.slick-active:nth-child(5) button {
-    // background: url("../../../assets/button/5-active.png");
+    background: url("../../../assets/department/moblie_on.png");
     background-color: #fb4d4d;
     background-size: 100% 100%;
     border-radius: 8px;
   }
   .vertical-dots li.slick-active:nth-child(6) button {
-    // background: url("../../../assets/button/6-active.png");
+    background: url("../../../assets/department/sre_on.png");
     background-color: #fb4d4d;
     background-size: 100% 100%;
     border-radius: 8px;
