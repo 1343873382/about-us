@@ -180,10 +180,6 @@ node scripts/start.js
 
 - 林其星
 
-## 项目上线时间
-
-- 2020年9月6日
-
 ## 代码的 GitHub/GitLab 地址
 
 - github: https://github.com/Cansiny0320/recruit-new.git
