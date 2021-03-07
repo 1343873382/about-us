@@ -17,7 +17,7 @@ prepare:
     paths:
       - node_modules/
   script:
-    - npm -v
+    - npm cache clean --force
     - npm ci
   only:
     changes:
