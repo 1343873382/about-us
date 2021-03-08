@@ -1,4 +1,3 @@
-import { transform } from "@babel/core";
 import React, { useState, useEffect } from "react";
 import { Parallax } from "react-parallax";
 import "./index.scss"
