@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 12:34:51
- * @LastEditTime: 2021-03-07 13:58:40
- * @LastEditors: your name
+ * @LastEditTime: 2021-03-08 23:49:54
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /about-us/src/mobile/App.js
  */

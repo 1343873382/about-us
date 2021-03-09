@@ -1,8 +1,16 @@
+/*
+ * @Author: your name
+ * @Date: 2021-03-07 14:18:56
+ * @LastEditTime: 2021-03-07 21:37:41
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /about-us/src/pc/pages/Joinus/index.js
+ */
 import React, { useContext } from 'react'
 import { Footer } from '../../components'
 import { Context } from '../../Context'
 import './index.scss'
-
+import { Link } from "react-router-dom"
 export const Joinus = props => {
   const { index, isScrolling, setCurrentIndex } = props
   const { joinus } = useContext(Context)
@@ -14,7 +22,7 @@ export const Joinus = props => {
           <div className="p1">{p1}</div>
           <div className="p2">{p2}</div>
           <div className="p3">{p3}</div>
-          <button>{button.text}</button>
+          <button><Link to="Spring">{button.text}</Link></button>
         </div>
         <div className="girl"></div>
       </div>
