@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-08 13:05:23
- * @LastEditTime: 2021-03-10 15:38:12
+ * @LastEditTime: 2021-03-10 15:46:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /about-us/src/pc/pages/SpringAsk/config.js
@@ -78,10 +78,10 @@ const mobileList = [
   { pos: 67, opacity: 8, txt: "4.能够独立完成工作，具有较强的综合分析问题及解决问题的能力。", scle: true, fontSize: smallSize },
   { pos: 71, opacity: 8, txt: "5.熟悉objective-C语言的语法及使用，掌握iOS基本控件的使用，熟练使用xcode。", scle: true, fontSize: smallSize },
   { pos: 75, opacity: 8, txt: "6.若有项目经验和开源作品优先招募。", scle: true, fontSize: smallSize},
-  { pos: 79, opacity: 8, txt: "招募对象", scle: true, fontSize: midSize },
-  { pos: 83, opacity: 8, txt: "大一或大二在校学生。", scle: true, fontSize:smallSize },
-  { pos: 87, opacity: 8, txt: "加入我们:", scle: true, fontSize: midSize },
-  { pos: 91, opacity: 8, txt: "发送你的简历（邮件主题命名：移动开发部春招- Android/iOS，在正文中留下你的基本信息以及QQ号码，若有github项目地址则一并写入正文，并以PDF格式发送）至mobile@redrock.team。", scle: true, fontSize: smallSize },
+  { pos: 77, opacity: 8, txt: "招募对象", scle: true, fontSize: midSize },
+  { pos: 82, opacity: 8, txt: "大一或大二在校学生。", scle: true, fontSize:smallSize },
+  { pos: 83, opacity: 8, txt: "加入我们:", scle: true, fontSize: midSize },
+  { pos: 88, opacity: 8, txt: "发送你的简历（邮件主题命名：移动开发部春招- Android/iOS，在正文中留下你的基本信息以及QQ号码，若有github项目地址则一并写入正文，并以PDF格式发送）至mobile@redrock.team。", scle: true, fontSize: smallSize },
 ]
 const sreList = [
   { pos: 2, opacity: 1, txt: "运维安全部", scle: false, reflect: true, fontSize: '35px' },
