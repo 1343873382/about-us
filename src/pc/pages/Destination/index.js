@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-03-07 14:18:56
+ * @LastEditTime: 2021-03-10 14:06:09
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /about-us/src/pc/pages/Destination/index.js
+ */
 import React, { useContext } from 'react'
 import Slider from 'react-slick'
 import { parseDestination } from './parseDestination'
@@ -14,35 +22,35 @@ export const Destination = props => {
     slidesToScroll: 2,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />
-  }
+  } 
   const destinations = parseDestination(destination)
 
   return (
-    <div className={`destination page ${props.className}`}>
-      <div className="container">
-        <div className="carousel">
+    <div className={`pc-destination pc-page ${props.className}`}>
+      <div className="pc-container">
+        <div className="pc-carousel">
           <Slider {...settings}>
             {
               destinations.map((column, i) => (
                 <div key={i}>
-                  <div className="card">
+                  <div className="pc-card">
                     {
                       column.map((row, j) => {
                         const { type, data } = row
 
                         if (type === 'year') {
                           return (
-                            <div className="row year" key={j}>
-                              <div className="line"></div>
+                            <div className="pc-row pc-year" key={j}>
+                              <div className="pc-line"></div>
                               {data}
                             </div>
                           )
                         } else {
                           return (
 
-                            <div className="row member" key={j}>
-                              <div className="name">{data.name}</div>
-                              <div className="place">{data.location}</div>
+                            <div className="pc-row pc-member" key={j}>
+                              <div className="pc-name">{data.name}</div>
+                              <div className="pc-place">{data.location}</div>
                             </div>
                           )
                         }

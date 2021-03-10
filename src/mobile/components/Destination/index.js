@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-03-07 14:18:56
+ * @LastEditTime: 2021-03-10 13:25:56
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /about-us/src/mobile/components/Destination/index.js
+ */
 import React, { useContext } from "react"
 import Slider from "react-slick"
 import { parseDestination } from "./parseDestination"
@@ -7,7 +15,6 @@ import "./index.scss"
 export const Destination = () => {
   const { title, destination } = useContext(Context)
   const settings = {
-    dots: true,
     infinite: false,
     speed: 1000,
     slidesToShow: 1,
@@ -18,7 +25,7 @@ export const Destination = () => {
 
   return (
     <div className="destination">
-      <div className="title" style={{ justifyContent: 'space-between' }}>
+      <div className="moblie-title" style={{ justifyContent: 'space-between' }}>
         <div className="flex-center">
           <div className="line" />
           {title.destination}

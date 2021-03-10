@@ -151,9 +151,9 @@ module.exports = function(webpackEnv) {
       mobile: isEnvDevelopment
         ? [
             require.resolve("react-dev-utils/webpackHotDevClient"),
-            paths.appSrc + "/mobile.js"
+            paths.appSrc + "/index.js"
           ]
-        : [paths.appSrc + "/mobile.js"]
+        : [paths.appSrc + "/index.js"]
       // We include the app code last so that if there is a runtime error during
       // initialization, it doesn't blow up the WebpackDevServer client, and
       // changing JS code would still trigger a refresh.
@@ -461,6 +461,10 @@ module.exports = function(webpackEnv) {
                 },
                 "sass-loader"
               )
+            },
+            {
+              test: /\.css/,
+              use:['style-loader','css-loader?modules$localIdentName=[path][name]-[local]-[hash]']
             },
             // "file" loader makes sure those assets get served by WebpackDevServer.
             // When you `import` an asset, you get its (virtual) filename.

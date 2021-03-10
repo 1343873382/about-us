@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 14:18:56
- * @LastEditTime: 2021-03-07 21:37:41
+ * @LastEditTime: 2021-03-10 13:55:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /about-us/src/pc/pages/Joinus/index.js
@@ -18,7 +18,7 @@ export const Joinus = props => {
   return (
     <div className={`joinus page ${props.className}`}>
       <div className="inner-container flex-between">
-        <div className="copywriting">
+        <div className="pc-copywriting">
           <div className="p1">{p1}</div>
           <div className="p2">{p2}</div>
           <div className="p3">{p3}</div>

@@ -1,0 +1,53 @@
+.background{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  animation: hidden 2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo{
+    width: 400px;
+    height: 100px;
+    background-image: url("https://s3.ax1x.com/2021/03/09/63g2jA.png");
+    background-size: cover;
+    transform: scale(0.5);
+  }
+  z-index: 999;
+}
+h1{
+  margin: 0;
+}
+h1 {
+font-family: 'code';
+}
+@font-face {
+  font-family: 'code';
+  src: url('../../../assets/font/heiti.ttf');
+}
+.hidden {
+  display: none;
+}
+.item {
+  height: 500px;
+}
+@keyframes hidden {
+  0%{
+    opacity: 1;
+    display: block;
+  }
+  20%{
+    opacity: 1;
+    display: block;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
+.reflect{
+  margin:0 auto;
+  -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.3));
+  text-transform:uppercase;
+}

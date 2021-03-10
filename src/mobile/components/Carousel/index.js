@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-03-07 14:18:56
+ * @LastEditTime: 2021-03-10 13:33:09
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /about-us/src/mobile/components/Carousel/index.js
+ */
 import React, { useContext } from 'react'
 import { Context } from "../../Context"
 import Slider from 'react-slick'
@@ -6,7 +14,6 @@ import './index.scss'
 export const Carousel = () => {
   const { carousel } = useContext(Context)
   const settings = {
-    dots: true,
     infinite: true,
     autoplay: true,
     speed: 1000,

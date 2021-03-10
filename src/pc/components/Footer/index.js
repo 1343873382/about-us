@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-03-07 14:18:56
+ * @LastEditTime: 2021-03-10 13:50:20
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /about-us/src/pc/components/Footer/index.js
+ */
 //import { link } from "fs-extra"
 import React, { useContext } from "react"
 import { Context } from "../../Context"
@@ -7,7 +15,7 @@ export const Footer = (props) => {
   const { footer, title2, all_product, all_product_src } = useContext(Context)
   const { setCurrentIndex } = props
   return (
-    <footer>
+    <footer className="pc-footer">
       <div className="other-inner-footer">
         <div className="footer_flex_box">
           <div className="red_rock_logo"></div>

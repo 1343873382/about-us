@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-03-10 12:40:41
+ * @LastEditTime: 2021-03-10 13:02:56
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /about-us/public/index.html
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,15 +21,15 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <script>
     // location.href.split('/').splice(-1)[0] 为当前index.html或mobile.html页面
-    if (location.href.split('/').splice(-1)[0] !== 'mobile.html') {
-      if (/mobile/i.test(navigator.userAgent)) {
-        location.href = './mobile.html'
-      }
-    } else {
-      if (!(/mobile/i.test(navigator.userAgent))) {
-        location.href = './'
-      }
-    }
+    // if (location.href.split('/').splice(-1)[0] !== 'mobile.html') {
+    //   if (/mobile/i.test(navigator.userAgent)) {
+    //     location.href = './'
+    //   }
+    // } else {
+    //   if (!(/mobile/i.test(navigator.userAgent))) {
+    //     location.href = './'
+    //   }
+    // }
   </script>
   <link rel="stylesheet" type="text/css" charset="UTF-8"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />

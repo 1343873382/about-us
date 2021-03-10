@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-03-07 14:18:56
+ * @LastEditTime: 2021-03-10 13:52:01
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /about-us/src/pc/pages/Aboutus/index.js
+ */
 import React, { useContext, Fragment } from 'react'
 import { Context } from '../../Context'
 import './index.scss'
@@ -27,7 +35,7 @@ export const Aboutus = props => {
           }
         </div>
         <div className="about_us_content_box">
-          <p className="copywriting">{copywriting}</p>
+          <p className="pc-copywriting ">{copywriting}</p>
         </div>
 
         <div className="bg"></div>

@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2019-07-10 17:01:13
- * @LastEditTime: 2020-10-17 20:54:02
- * @LastEditors: 代码是写出来给人看的，附带能在机器上运行
+ * @LastEditTime: 2021-03-10 14:24:57
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \about-us\src\pc\pages\Department\index.js
  */
@@ -15,10 +15,10 @@ export const Department = props => {
   const { department } = useContext(Context);
   const { departments } = department;
   const settings = {
-    infinite: true,
+    infinite: true, 
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots: true,
+    dots: true, 
     arrows: false,
     vertical: true,
     verticalSwiping: true,
@@ -27,7 +27,7 @@ export const Department = props => {
   };
 
   return (
-    <div className={`department page ${props.className}`}>
+    <div className={`pc-department page ${props.className}`}>
       <div className="carousel">
         <Slider {...settings}>
           {departments.map((e, i) => (

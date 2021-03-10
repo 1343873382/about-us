@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-03-07 14:18:56
+ * @LastEditTime: 2021-03-10 13:14:40
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /about-us/src/mobile/components/Department/index.js
+ */
 import React, { useContext } from "react"
 import Slider from "react-slick"
 import { Context } from "../../Context"
@@ -17,7 +25,7 @@ export const Department = () => {
   }
   return (
     <div className="department">
-      <div className="title">
+      <div className="moblie-title">
         <div className="line" />
         {title.department}
       </div>
@@ -44,7 +52,7 @@ export const Department = () => {
           )
         })}
       </div>
-      <div className="title" style={{ marginTop: "8vw" }}>
+      <div className="moblie-title" style={{ marginTop: "8vw" }}>
         <div className="line" />
         部门介绍
       </div>

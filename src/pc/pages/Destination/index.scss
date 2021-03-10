@@ -1,14 +1,23 @@
-.destination {
+.pc-page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transition: transform 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pc-destination {
   background: #fafafa;
-  .container {
+  .pc-container {
     width: 100vw;
     display: flex;
+    justify-content: center;
   }
-  .carousel {
+  .pc-carousel {
     width: 62.5vw;
     height: 60vh;
     position: relative;
-    top: 10vh;
     box-shadow: 0px 4px 15px 10px rgba(103, 47, 123, 0.02);
     border-radius: 8px;
     cursor: pointer;
@@ -17,20 +26,20 @@
       outline: none;
     }
 
-    .card {
+    .pc-card {
       width: 26vw;
       height: 40vh;
       position: relative;
       left: 2vw;
 
-      .row {
+      .pc-row {
         width: 100%;
         height: 37.5px;
         display: flex;
         align-items: center;
       }
 
-      .year {
+      .pc-year {
         font-family: "hin";
         color: #f27f7f;
         font-size: 20px;
@@ -38,7 +47,7 @@
         margin-bottom: 20px;
       }
 
-      .line {
+      .pc-line {
         position: relative;
         transform: translateX(-10px);
         height: 40px;
@@ -48,7 +57,7 @@
         background-size: cover;
       }
 
-      .member {
+      .pc-member {
         justify-content: space-between;
         color: #666666;
         font-size: 15px;
