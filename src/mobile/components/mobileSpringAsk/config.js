@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-08 13:05:23
- * @LastEditTime: 2021-03-10 15:46:34
+ * @LastEditTime: 2021-03-10 19:38:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /about-us/src/pc/pages/SpringAsk/config.js
@@ -117,10 +117,10 @@ const sreList = [
   { pos: 146 + offset, opacity: 12, txt: "2.掌握Docker/k8s/pve的基础操作，搭建以及维护。", scle: true, fontSize: smallSize },
   { pos: 150 + offset, opacity: 12, txt: "3.实践过CI/CD持续集成和自动化经验者优先。", scle: true, fontSize: smallSize },
   { pos: 154 + offset, opacity: 12, txt: "4.能够运用主机监控、日志分析 追查问题 提高稳定性。", scle: true, fontSize: smallSize },
-  { pos: 176, opacity: 14, txt: "招募对象:", scle: true, fontSize: midSize },
-  { pos: 180, opacity: 14, txt: "大一或大二在校学生。", scle: true, fontSize: smallSize },
-  { pos: 186, opacity: 14, txt: "加入我们:", scle: true, fontSize: midSize },
-  { pos: 190, opacity: 14, txt: "发送你的简历（邮件主题命名：方向-学号-姓名，如：DBA-2020xxxxxx-李田所，在正文中留下你的QQ号码，若有github项目地址则一并写入正文，并以PDF格式发送）至sre@redrock.team如无上述技能，但想加入我们，也欢迎前来报名，我们会酌情考量并进行相关培训（包教会。", scle: true, fontSize: smallSize },
+  { pos: 168, opacity: 14, txt: "招募对象:", scle: true, fontSize: midSize },
+  { pos: 173, opacity: 14, txt: "大一或大二在校学生。", scle: true, fontSize: smallSize },
+  { pos: 175, opacity: 14, txt: "加入我们:", scle: true, fontSize: midSize },
+  { pos: 180, opacity: 14, txt: "发送你的简历（邮件主题命名：方向-学号-姓名，如：DBA-2020xxxxxx-李田所，在正文中留下你的QQ号码，若有github项目地址则一并写入正文，并以PDF格式发送）至sre@redrock.team如无上述技能，但想加入我们，也欢迎前来报名，我们会酌情考量并进行相关培训（包教会。", scle: true, fontSize: smallSize },
 ]
 const designList = [
   { pos: 2, opacity: 1, txt: "视觉设计部", scle: false, reflect: true, fontSize: '35px' },
@@ -130,8 +130,8 @@ const designList = [
   { pos: 40, opacity: 1.5, txt: "3、个性乐观积极，善于沟通，有责任心，抗压能力强。", scle: true, fontSize: smallSize },
   { pos: 55, opacity: 1.5, txt: "招募对象:", scle: true, fontSize: midSize },
   { pos: 63, opacity: 1.5, txt: "大一在校学生。", scle: true, fontSize: smallSize },
-  { pos: 70, opacity: 1.5, txt: "加入我们:", scle: true, fontSize: midSize },
-  { pos: 80, opacity: 1.5, txt: "将你的作品集以PDF格式发送至design@redrock.team（邮件主题命名格式为： 姓名-学号-专业-电话，如：于某-2020111111-数字媒体艺术-13345556777）。", scle: true, fontSize: smallSize },
+  { pos: 67, opacity: 1.5, txt: "加入我们:", scle: true, fontSize: midSize },
+  { pos: 75, opacity: 1.5, txt: "将你的作品集以PDF格式发送至design@redrock.team（邮件主题命名格式为： 姓名-学号-专业-电话，如：于某-2020111111-数字媒体艺术-13345556777）。", scle: true, fontSize: smallSize },
 ]
 const flower = [
   {opacity:1,rotate:-40},

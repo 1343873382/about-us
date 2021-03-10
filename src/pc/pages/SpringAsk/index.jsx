@@ -17,7 +17,7 @@ const styles = {
   textAlign: "center"
 };
 
-const Spring = () => {
+const MobileSpring = () => {
   const [Hidden, setHidden] = useState(false)
   const Big = (e) => (num) => e * num
   const scle = Big(20)
@@ -54,8 +54,10 @@ const Spring = () => {
                         left: "5%",
                         opacity: `${!item.scle ? 1 : (scle(e - 1) - item.opacity)}`,
                         zIndex: 2,
-                      }}><h1 className={item.reflect ? '' : ''}
-                      >{item.txt}</h1></div>
+                      }}><p style={{
+                        fontWeight: 900
+                      }}
+                      >{item.txt}</p></div>
                     )
                   })}
                 </div>
@@ -103,20 +105,21 @@ const Spring = () => {
                       left: "5%",
                       opacity: `${!item.scle ? 1 : (scle(e - 1) - item.opacity)}`,
                       zIndex: 2,
-                    }}><h1 className={item.reflect ? '' : ''}
-                    >{item.txt}</h1></div>
+                    }}><p style={{
+                      fontWeight: 900
+                    }}
+                    >{item.txt}</p></div>
                   )
                 })}
                 <div style={{
                   color: "#5EABCF",
                   position: "absolute",
                   top: `${30}%`,
-                  left: `${10 + (5 - e * 5)}vw`,
+                  left: `${10 + (5 - e * 20)}vw`,
                   fontSize: "50vw",
                   opacity: 0.4,
-                  clipPath: `polygon(0 0, 100% 0, 100% 48%, 0 48%)`
                 }}>WEB</div>
-                <div style={{
+                {/* <div style={{
                   color: "#5EABCF",
                   position: "absolute",
                   top: `${31}%`,
@@ -124,7 +127,7 @@ const Spring = () => {
                   fontSize: "50vw",
                   opacity: 0.4,
                   clipPath: `polygon(0 48%, 100% 48%, 100% 100%, 0 100%)`
-                }}>WEB</div>
+                }}>WEB</div> */}
               </div>
             )
           }
@@ -149,8 +152,10 @@ const Spring = () => {
                       left: "5%",
                       opacity: `${!item.scle ? 1 : (scle(e - 1) - item.opacity)}`,
                       zIndex: 2,
-                    }}><h1 className={item.reflect ? '' : ''}
-                    >{item.txt}</h1></div>
+                    }}><p style={{
+                      fontWeight: 900
+                    }}
+                    >{item.txt}</p></div>
                   )
                 })}
                 <div style={{
@@ -199,22 +204,24 @@ const Spring = () => {
                       left: "5%",
                       opacity: `${!item.scle ? 1 : (scle(e - 1) - item.opacity)}`,
                       zIndex: 2,
-                    }}><h1 className={item.reflect ? '' : ''}
-                    >{item.txt}</h1></div>
+                    }}><p style={{
+                      fontWeight: 900
+                    }}
+                    >{item.txt}</p></div>
                   )
                 })}
                 <div style={{
                   top: `${20 * e}%`,
                   position: "absolute",
                   color: "#38A9A9",
-                  fontSize: "20vw",
+                  fontSize: "40vw",
                   opacity: 0.5
                 }}>S</div>
                 <div style={{
                   top: `${20 + 20 * e}%`,
                   position: "absolute",
                   color: "#38A9A9",
-                  fontSize: "20vw",
+                  fontSize: "40vw",
                   left: "30%",
                   opacity: 0.5
                 }}>R</div>
@@ -222,13 +229,13 @@ const Spring = () => {
                   top: `${40 + 20 * e}%`,
                   position: "absolute",
                   color: "#38A9A9",
-                  fontSize: "20vw",
+                  fontSize: "40vw",
                   left: "60%",
                   opacity: 0.5
                 }}>E</div>
                 <div style={{
-                  width: "20vw",
-                  height: "20vw",
+                  width: "40vw",
+                  height: "40vw",
                   position: "absolute",
                   opacity: 0.4,
                   top: `${40 + 10 * e}%`,
@@ -263,8 +270,10 @@ const Spring = () => {
                       left: "5%",
                       opacity: `1`,
                       zIndex: 2,
-                    }}><h1 className={item.reflect ? '' : ''}
-                    >{item.txt}</h1></div>
+                    }}><p style={{
+                      fontWeight: 900
+                    }}
+                    >{item.txt}</p></div>
                   )
                 })}
                 {
@@ -301,4 +310,4 @@ const Spring = () => {
   )
 }
 
-export default Spring
+export default MobileSpring
