@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-08 13:05:23
- * @LastEditTime: 2021-03-10 19:38:10
+ * @LastEditTime: 2021-03-11 14:47:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /about-us/src/pc/pages/SpringAsk/config.js
@@ -11,9 +11,9 @@ const offset = 10
 const offsetTitle = 10
 const offsetMainTitle = 8
 const fontSize = (num) => `${num}px`
-const bigSize = fontSize(45)
-const midSize = fontSize(35)
-const smallSize = fontSize(17)
+const bigSize = fontSize(40)
+const midSize = fontSize(32)
+const smallSize = fontSize(13)
 const pmOffset = 5
 const pmList = [
   { pos: 5, opacity: 1, txt: "产品策划及运营部", scle: false, fontSize: '35px' },
